@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .icon-js {
+            color: #f7df1e;
+        }
+
+        .icon-react {
+            color: #61dafb;
+        }
+
+        .icon-java {
+            color: #007396;
+        }
+
+        .icon-spring {
+            color: #6db33f;
+        }
+
+        .icon-php {
+            color: #777bb4;
+        }
+
+        .icon-git {
+            color: #f34f29;
+        }
+
+        .icon-figma {
+            color: #f24e1e;
+        }
+
+        .icon-tailwind {
+            color: #06b6d4;
+        }
+
+        .icon-sass {
+            color: #cc6699;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            /* Evita el desbordamiento horizontal */
+        }
+    </style>
+</head>
+
+<body class="m-0 mx-auto">
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formacion">Formacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+
+                    <button type="button" class="btn btn-dark">Download CV</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="inicio" class="row d-flex justify-content-evenly align-items-center my-5 py-5">
+        <div class="col-6">
+            <h1 class="fw-bold">Eloy García Martínez</h1>
+            <p class="">¡Hola! Soy Eloy García, programador web y actual estudiante del ciclo superior de
+                DAW (Desarrollo de Aplicaciones Web). Me gusta estar en continuo aprendizaje y ayudar a
+                empresas y emprendedores a tener un hueco en el mundo de Internet.
+            </p>
+            <div class="info d-flex flex-row align-items-center">
+                <i class="fas fa-map-marker-alt me-2"></i>
+                <span>A Coruña</span>
+            </div>
+            <div class="info d-flex flex-row align-items-center">
+                <i class="fas fa-book me-2"></i>
+                <span>Studying</span>
+            </div>
+            <div class="info d-flex flex-row align-items-center mt-3">
+                <i class="fab fa-linkedin me-3"></i>
+                <i class="fab fa-github me-lg-3"></i>
+            </div>
+        </div>
+        <div class="col-2">
+            <img src="../img/hero_img.jpeg" class="img-fluid shadow-lg w-75 rounded" alt="img eloy">
+        </div>
+    </div>
+
+
+    <div id="habilidades" class="container text-center rounded-4 bg-body-secondary my-5 py-5">
+        <button class="btn rounded-5 btn-secondary">Habilidades</button>
+        <div class="row d-flex justify-content-evenly align-items-center p-4">
+            <div class="col-12 text-center">
+                <h4 class="fw-light">Habilidades y tecnologías que domino</h4>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-evenly text-center align-items-center p-5">
+            <div class="col-2">
+                <i class="fab fa-js icon-js fa-4x mb-2"></i>
+                <h5 class="text-muted">JavaScript</h5>
+            </div>
+            <div class="col-2">
+                <i class="fab fa-react icon-react fa-4x mb-2"></i>
+                <h5 class="text-muted">React</h5>
+            </div>
+            <div class="col-2">
+                <i class="fab fa-java icon-java fa-4x mb-2"></i>
+                <h5 class="text-muted">Java</h5>
+            </div>
+            <div class="col-2">
+                <img src="../img/spring-logo.png" class="img-fluid w-50 mb-2" alt="">
+                <h5 class="text-muted">Spring</h5>
+            </div>
+            <div class="col-2">
+                <i class="fab fa-php icon-php fa-4x mb-2"></i>
+                <h5 class="text-muted">PHP</h5>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-evenly text-center align-items-center p-5">
+            <div class="col-2">
+                <i class="fab fa-git icon-git fa-4x mb-2"></i>
+                <h5 class="text-muted">GIT</h5>
+            </div>
+            <div class="col-2">
+                <i class="fab fa-figma icon-figma fa-4x mb-2"></i>
+                <h5 class="text-muted">Figma</h5>
+            </div>
+            <div class="col-2">
+                <img src="../img/Tailwind_CSS_Logo.svg.png" class="img-fluid w-50 mb-2" alt="">
+                <h5 class="text-muted">Tailwind</h5>
+            </div>
+            <div class="col-2">
+                <i class="fab fa-sass icon-sass fa-4x mb-2"></i>
+                <h5 class="text-muted">Sass</h5>
+            </div>
+            <div class="col-2">
+                <i class="fab fa-symfony icon-symfony fa-4x mb-2"></i>
+                <h5 class="text-muted">Symfony</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="proyectos" class="container text-center rounded-4 my-5 py-5">
+        <button class="btn rounded-5 btn-secondary">Proyectos</button>
+        <div class="row mt-5 d-flex align-items-stretch">
+            <div class="col-4 d-flex align-items-stretch">
+                <div class="card text-start">
+                    <img src="../img/memorama.png" class="card-img img-fluid" alt="">
+                    <h4 class="card-title fw-semibold mt-4 mx-3">Memorama</h4>
+                    <p class="card-text mb-4 mx-3">Proyecto sobre un juego de memoria realizado con JavaScript.</p>
+                </div>
+            </div>
+            <div class="col-4 d-flex align-items-stretch">
+                <div class="card text-start">
+                    <a href="portfolio.html"><img src="../img/podcastproject.png" class="card-img img-fluid" alt=""></a>
+                    <h4 class="card-title fw-semibold mt-4 mx-3">Podcast</h4>
+                    <p class="card-text mb-4 mx-3">Landing Page sobre un Podcast.</p>
+                </div>
+            </div>
+            <div class="col-4 d-flex align-items-stretch">
+                <div class="card text-start">
+                    <img src="../img/portfolio.png" class="card-img img-fluid" alt="">
+                    <h4 class="card-title fw-semibold mt-4 mx-3">Portfolio</h4>
+                    <p class="card-text mb-4 mx-3">Proyecto sobre un portfolio.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="experiencia" class="container text-center rounded-4 bg-body-secondary my-5 py-5">
+        <button class="btn rounded-5 btn-secondary">Experiencia</button>
+        <div class="row d-flex justify-content-evenly align-items-center p-4">
+            <div class="col-12 text-center">
+                <h4 class="fw-light">Estas han sido mis últimas experiencias laborales.</h4>
+            </div>
+        </div>
+
+        <div class="card shadow rounded border w-75 mx-auto m-0 p-5">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-6 text-start">
+                    <img src="../img/serviceboxlogo.png" class="img-fluid w-50" alt="">
+                </div>
+                <div class="col-6 text-start">
+                    <h4>Roles</h4>
+                    <ul class="list-unstyled">
+                        <li>Creación de páginas web</li>
+                        <li>Administración de webs</li>
+                        <li>Administración del servidor web</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-6 text-start">
+                    <img src="../img/serviceboxlogo.png" class="img-fluid w-50" alt="">
+                </div>
+                <div class="col-6 text-start">
+                    <h4>Roles</h4>
+                    <ul class="list-unstyled">
+                        <li>Creación de páginas web</li>
+                        <li>Administración de webs</li>
+                        <li>Administración del servidor web</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="formacion" class="container text-center rounded-4 my-5 p-5">
+        <button class="btn rounded-5 btn-secondary">Formación</button>
+        <div class="row d-flex align-items-center justify-content-center align-items-stretch mt-5">
+
+            <div class="col-6 text-start card shadow rounded border mx-auto p-5">
+                <h4 class="text-bg-danger rounded-2 p-2">Liceo La Paz</h4>
+                <h5 class="fw-semibold">Sistemas Microinformáticos y Redes (2000hr)</h5>
+                <ul class="text-muted">
+                    <li>Este ciclo te permitirá instalar y mantener servicios de redes, equipos y sistemas informáticos
+                        en entornos monousuario y multiusuario y servicios de Internet.</li>
+                    <li>Elaborar páginas web dinámicas, utilizando las herramientas más avanzadas en diseño Web.</li>
+                    <li>Mantenimiento de servicios de internet: servidor web, correo, proxys...</li>
+                    <li>Dar soporte al usuario resolviendo los problemas que se presentan en la explotación del servicio
+                        de red, del sistema informático y de las aplicaciones ofimáticas, siguiendo protocolos de
+                        actuación establecidos</li>
+                </ul>
+            </div>
+
+            <div class="col-6 text-start card shadow rounded border mx-auto m-0 p-5">
+                <h4 class="text-bg-danger rounded-2 p-2">Liceo La Paz</h4>
+                <h5 class="fw-semibold">Desarrollo de Aplicaciones Web (2000hr)</h5>
+                <ul class="text-muted">
+                    <li>Este Ciclo te permitirá desarrollar, implantar y mantener aplicaciones web.</li>
+                    <li>Configurar y explotar sistemas informáticos.</li>
+                    <li>Aplicar técnicas y procedimientos relacionados con la seguridad en sistemas.</li>
+                    <li>Gestionar servidores de aplicaciones. Gestionar bases de datos.</li>
+                    <li>Desarrollar componentes multimedia para su integración en aplicaciones web.</li>
+                    <li>Desarrollar e integrar componentes software en el entorno del servidor web.</li>
+                </ul>
+            </div>
+
+            <div class="col-6 text-start card shadow rounded border mx-auto m-0 p-5">
+                <h4 class="text-bg-info text-white rounded-2 p-2">Udemy</h4>
+                <h5 class="fw-semibold">Curso Profesional de Desarrollo Web: Html, Css, Sass, Bootstrap,
+                    Js, Jquery, Wordpress y Figma (42hr)
+                </h5>
+                <ul class="text-muted">
+                    <li>Introducción a Figma: Creación de bocetos de sitios web.</li>
+                    <li>Fundamentos del Diseño Web: Construcción de la primera página web con HTML y CSS.</li>
+                    <li>Diseño Web Adaptable: Creación de páginas responsivas para dispositivos móviles.</li>
+                    <li>Programación en JavaScript: Implementación de lógica y interactividad en las páginas web.</li>
+                    <li>jQuery: Adición de efectos y animaciones a las páginas web.</li>
+                    <li>Bootstrap 5: Utilización del framework para diseño web responsive rápido y sencillo.</li>
+                    <li>WordPress: Gestión de contenidos, desde la instalación hasta la creación de un blog real.</li>
+                    <li>Control de Versiones con Git y GitHub: Compartición y gestión del código.</li>
+                    <li>Publicación de Sitios Web: Proceso de subir páginas web a Internet.</li>
+                </ul>
+            </div>
+
+            <div class="col-6 text-start card shadow rounded border mx-auto m-0 p-5">
+                <h4 class="text-bg-info text-white rounded-2 p-2">Udemy</h4>
+                <h5 class="fw-semibold">Máster en Java , 0 a experto, Universidad, GS, DAM, DAW (54hr)
+                </h5>
+                <ul class="text-muted">
+                    <li>Bases de Java: Desde variables hasta estructuras de control.</li>
+                    <li>Programación Orientada a Objetos: Clases, métodos, herencia, polimorfismo.</li>
+                    <li>Aprobar Exámenes y Conseguir Empleo: Preparación para certificaciones y entrevistas.</li>
+                    <li>Bases de Datos: Manejo de bases de datos con JDBC.</li>
+                    <li>Programación Funcional: Uso de expresiones Lambda y Stream API.</li>
+                    <li>Programación Multihilo.</li>
+                    <li>Manejo de Excepciones y Colecciones.</li>
+                    <li>Interfaces Gráficas: Creación de GUIs con SWING.</li>
+                    <li>Comunicación entre Objetos en Java.</li>
+                </ul>
+            </div>
+
+
+            <div class="col-6 text-start card shadow rounded border mx-auto m-0 p-5">
+                <h4 class="text-bg-dark text-white rounded-2 p-2">Google</h4>
+                <h5 class="fw-semibold">Curso de Introducción al Desarrollo Web: HTML y CSS (1/2) (40hr)
+                </h5>
+                <ul class="text-muted">
+                    <li>Historia de la Web: Exploré cómo nació y evolucionó la Web hasta convertirse en lo que es hoy.
+                    </li>
+                    <li>Funcionamiento de la Web: Comprendí los principios básicos de cómo funciona la Web, incluyendo
+                        protocolos como HTTP y HTTPS.</li>
+                    <li>Creación de páginas web: Aprendí a escribir y estructurar correctamente páginas web utilizando
+                        HTML5.</li>
+                    <li>Publicación de sitios web: Conocí los pasos necesarios para alojar y publicar sitios web en
+                        servidores.</li>
+                    <li>Buenas prácticas en estructuración web: Me familiaricé con las mejores prácticas para
+                        estructurar contenido y aplicar estilos CSS para mejorar la apariencia visual de las páginas.
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="col-6 text-start card shadow rounded border mx-auto m-0 p-5">
+                <h4 class="text-bg-dark text-white rounded-2 p-2">Google</h4>
+                <h5 class="fw-semibold">Curso de Introducción al Desarrollo Web: HTML y CSS (2/2) (40hr)
+                </h5>
+                <ul class="text-muted">
+                    <li>Definición de la presentación de una página web: Aprendí a aplicar estilos CSS para definir la
+                        apariencia visual de páginas web.</li>
+                    <li>Definición de la presentación de los elementos de una página web: Me familiaricé con la
+                        estilización individual de componentes web utilizando CSS.</li>
+                    <li>Maquetación de una página web: Adquirí conocimientos sobre cómo estructurar y organizar el
+                        contenido de una página web de manera profesional utilizando técnicas de diseño y maquetación
+                        con CSS.</li>
+                    <li>Logro del éxito de una página web: Entendí los factores clave para crear páginas web exitosas,
+                        incluyendo la usabilidad, accesibilidad y rendimiento.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="contacto" class="container text-center rounded-4 bg-body-secondary my-5 p-5">
+        <button class="btn rounded-5 btn-secondary">Contacto</button>
+        <div class="row mt-5 d-flex flex-row align-items-center">
+            <div class="col-6 text-start">
+                <h4>Contacto</h4>
+                <p>Escríbeme a <a href="mailto:e.garcia@liceolapaz.net">e.garcia@liceolapaz.net</a> o
+                    encuéntrame en <a href="https://www.linkedin.com/in/eloygarciamartinez/">Linkedin</a>. Estoy listo
+                    para colaborar contigo!</p>
+                <form action="/action_page.php" class="d-flex gap-2 flex-column">
+                    <div class="form-group">
+                        <input type="nombre" placeholder="Nombre" class="form-control rounded-0 p-3 w-75" id="nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" class="form-control rounded-0 p-3 w-75" id="email">
+                    </div>
+                    <button type="submit" class="btn btn-dark rounded-0 p-3 w-25">Enviar</button>
+                </form>
+            </div>
+
+            <div class="col-6 text-start">
+                <div class="d-flex flex-column">
+                    <i class="fab fa-linkedin mb-3 display-5"></i>
+                    <i class="fab fa-github mb-3 display-5"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
