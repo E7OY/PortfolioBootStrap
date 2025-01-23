@@ -1,0 +1,56 @@
+.icon-js {
+    color: #f7df1e;
+}
+
+.icon-react {
+    color: #61dafb;
+}
+
+.icon-java {
+    color: #007396;
+}
+
+.icon-spring {
+    color: #6db33f;
+}
+
+.icon-php {
+    color: #777bb4;
+}
+
+.icon-git {
+    color: #f34f29;
+}
+
+.icon-figma {
+    color: #f24e1e;
+}
+
+.icon-tailwind {
+    color: #06b6d4;
+}
+
+.icon-sass {
+    color: #cc6699;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+#proyectos .card:hover, #formacion .card:hover {
+    box-shadow: 0px 0px 20px rgb(184, 184, 184);
+}
+
+#inicio {
+    margin-top: 80px;
+}
+
