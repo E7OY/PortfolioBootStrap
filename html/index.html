@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                        <a class="nav-link active" aria-current="page" href="#inicio">Sobre mi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#habilidades">Habilidades</a>
@@ -54,16 +54,35 @@
             </p>
             <div class="info d-flex flex-row align-items-center text-secondary">
                 <i class="fas fa-map-marker-alt me-2"></i>
-                <span class="">A Coruña</span>
+                <span class="">A Coruña</span><span class="mx-2" id="display-time"></span><span id="temp"
+                    class="text-secondary"></span>
+                <script>
+                    const apiKey = 'fbc85170dc7995a303c1d3f3a45cd83a';
+                    const ciudad = 'Corunha';
+                    const url = `https://api.openweathermap.org/data/2.5/weather?q=Corunha&appid=fbc85170dc7995a303c1d3f3a45cd83a&units=metric&lang=es`;
+                    fetch(url)
+                        .then(response => response.json())
+                        .then(data => {
+                            const tempDiv = document.getElementById('temp');
+                            const temperatura = Math.round(data.main.temp);
+                            const descripcion = data.weather[0].description;
+                            tempDiv.innerHTML = `${descripcion}<span>, </span>${temperatura}°C`;
+                        })
+                        .catch(error => console.log('Error:', error));
+                </script>
+
+
             </div>
             <div class="info d-flex flex-row align-items-center text-secondary">
                 <i class="fas fa-book me-2"></i>
-                <span>Studying</span>
+                <span>Estudiante en <a class="text-secondary" href="https://liceolapaz.com">Liceo La Paz</a></span>
             </div>
             <div class="info d-flex flex-row align-items-center mt-3 text-secondary">
                 <i class="fab fa-linkedin me-3"></i>
                 <i class="fab fa-github me-3"></i>
             </div>
+
+
         </div>
         <div class="col-3">
             <img src="../img/Group 5(1).png" class="img-fluid shadow-lg w-75 rounded-circle" alt="img eloy">
@@ -496,13 +515,13 @@
                 <div class="col-4">
                     <form action="/action_page.php" class="d-flex gap-2 flex-column">
                         <div class="form-group">
-                            <input type="nombre" placeholder="Nombre" class="form-control rounded-0 p-3 w-75"
+                            <input type="nombre" placeholder="Nombre" class="form-control rounded-0 p-3 w-100"
                                 id="nombre">
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Email" class="form-control rounded-0 p-3 w-75" id="email">
+                            <input type="email" placeholder="Email" class="form-control rounded-0 p-3 w-100" id="email">
                         </div>
-                        <button type="submit" class="btn btn-dark rounded-0 p-3 w-25">Enviar</button>
+                        <button type="submit" class="btn btn-dark rounded-0 p-3 w-50">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -516,17 +535,17 @@
 
 
 
-        <footer class="border-2 border text-black text-start rounded-4 mt-5">
+        <footer class="border-2 border text-black text-start rounded-4 p-4 mt-5">
             <div class="container p-4">
                 <div class="row d-flex">
-                    <div class="col-4 mb-4 mb-md-0">
+                    <div class="col-3 mb-4 mb-md-0">
                         <h5 class="text-white">Puedes contactarme en: </h5>
                         <div class="d-flex flex-row gap-3 mt-3">
                             <i class="fab fa-linkedin mb-3 display-6 text-secondary"></i>
                             <i class="fab fa-github mb-3 display-6 text-secondary"></i>
                         </div>
                     </div>
-                    <div class="col-4 mb-4 mb-md-0">
+                    <div class="col-3 mb-4 mb-md-0">
                         <h5 class="text-white">Enlaces</h5>
                         <ul class="list-unstyled mb-0 text-secondary">
                             <li>
@@ -549,7 +568,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-4 mb-4 mb-md-0">
+                    <div class="col-3 mb-4 mb-md-0">
                         <h5 class="text-white">Enlaces</h5>
                         <ul class="list-unstyled mb-0 text-black">
                             <li>
@@ -572,6 +591,7 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="col-3" id="github-activity"></div>
                 </div>
             </div>
 
@@ -587,6 +607,93 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
+        <script>
+            function myFunc() {
+                var now = new Date();
+                var time = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+                document.getElementById('display-time').innerHTML = time;
+            }
+            setInterval(myFunc, 1000);
+
+        </script>
+        <script>
+                   async function fetchCommitActivity() {
+            const username = 'E7OY';
+            const token = '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'; // Reemplaza esto con tu token de acceso personal
+            const commitsContainer = document.getElementById('github-activity');
+            const commitCounts = {};
+            const currentDate = new Date();
+            const threeMonthsAgoDate = new Date();
+            threeMonthsAgoDate.setMonth(currentDate.getMonth() - 1);
+            let page = 1;
+            let hasMoreEvents = true;
+
+            // Fetch user info
+            const userInfoResponse = await fetch(`https://api.github.com/users/${username}`, {
+                headers: {
+                    'Authorization': `token ${token}`
+                }
+            });
+            const userInfo = await userInfoResponse.json();
+
+            // Display user info
+            const userInfoContainer = document.createElement('div');
+            userInfoContainer.className = 'user-info text-center mb-4';
+            userInfoContainer.innerHTML = `
+                <img src="${userInfo.avatar_url}" class="rounded-circle" width="100" alt="${userInfo.login}">
+                <h3>${userInfo.login}</h3>
+            `;
+            commitsContainer.appendChild(userInfoContainer);
+
+            while (hasMoreEvents) {
+                const response = await fetch(`https://api.github.com/users/${username}/events?page=${page}`, {
+                    headers: {
+                        'Authorization': `token ${token}`
+                    }
+                });
+                const events = await response.json();
+
+                if (events.length === 0) {
+                    hasMoreEvents = false;
+                    break;
+                }
+
+                events.forEach(event => {
+                    if (event.type === 'PushEvent') {
+                        const eventDate = new Date(event.created_at);
+                        const dateStr = eventDate.toISOString().split('T')[0];
+
+                        if (eventDate >= threeMonthsAgoDate && eventDate <= currentDate) {
+                            if (!commitCounts[dateStr]) {
+                                commitCounts[dateStr] = 0;
+                            }
+                            commitCounts[dateStr] += event.payload.commits.length;
+                        }
+                    }
+                });
+
+                page++;
+            }
+
+            const calendar = document.createElement('div');
+            calendar.className = 'calendar';
+
+            for (let d = new Date(threeMonthsAgoDate); d <= currentDate; d.setDate(d.getDate() + 1)) {
+                const dateStr = d.toISOString().split('T')[0];
+                const count = commitCounts[dateStr] || 0;
+                const level = Math.min(4, Math.floor(count / 2)); // Adjust the level calculation as needed
+
+                const day = document.createElement('div');
+                day.className = `day level-${level}`;
+                day.title = `${dateStr}: ${count} commits`;
+                calendar.appendChild(day);
+            }
+
+            commitsContainer.appendChild(calendar);
+        }
+
+        fetchCommitActivity();
+        </script>
 </body>
 
 </html>
