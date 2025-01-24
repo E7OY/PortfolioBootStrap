@@ -115,3 +115,8 @@ body {
 .day.level-4 {
     background-color: #39D353;
 }
+
+
+#formacion .card:hover {
+    cursor: pointer;
+}
