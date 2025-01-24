@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
 
 <body class="m-0 mx-auto">
 
-    <nav class="navbar navbar-expand-lg position-fixed w-100 p-4 text-center mx-auto m-0 bg-white z-3">
+    <nav class="navbar navbar-expand-lg w-100 p-4 text-center mx-auto m-0 z-3">
         <div class="container-fluid">
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                 <ul class="navbar-nav">
@@ -39,36 +39,39 @@
                         <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
 
-                    <button type="button" class="btn btn-dark">Download CV</button>
+                    <button type="button" class="btn btn-secondary">Descargar CV</button>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div id="inicio" class="w-75 row mx-auto d-flex justify-content-evenly align-items-center py-5">
+    <div id="inicio" class="w-75 row mx-auto d-flex justify-content-around align-items-center py-5">
         <div class="col-6">
             <h1 class="fw-bold">Eloy García Martínez</h1>
-            <p class="">¡Hola! Soy Eloy García, programador web y actual estudiante del ciclo superior de
+            <p class="text-secondary">¡Hola! Soy Eloy García, programador web y actual estudiante del ciclo superior de
                 DAW (Desarrollo de Aplicaciones Web). Me gusta estar en continuo aprendizaje y ayudar a
                 empresas y emprendedores a tener un hueco en el mundo de Internet.
             </p>
-            <div class="info d-flex flex-row align-items-center">
+            <div class="info d-flex flex-row align-items-center text-secondary">
                 <i class="fas fa-map-marker-alt me-2"></i>
-                <span>A Coruña</span>
+                <span class="">A Coruña</span>
             </div>
-            <div class="info d-flex flex-row align-items-center">
+            <div class="info d-flex flex-row align-items-center text-secondary">
                 <i class="fas fa-book me-2"></i>
                 <span>Studying</span>
             </div>
-            <div class="info d-flex flex-row align-items-center mt-3">
+            <div class="info d-flex flex-row align-items-center mt-3 text-secondary">
                 <i class="fab fa-linkedin me-3"></i>
                 <i class="fab fa-github me-3"></i>
             </div>
         </div>
-        <div class="col-2">
-            <img src="../img/Group 5(1).png" class="img-fluid shadow-lg w-100 rounded-circle" alt="img eloy">
+        <div class="col-3">
+            <img src="../img/Group 5(1).png" class="img-fluid shadow-lg w-75 rounded-circle" alt="img eloy">
         </div>
+
     </div>
+    <!--<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <dotlottie-player src="https://lottie.host/70832782-639d-473f-ab0e-516226c23266/x5ZWkOi0Op.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>-->
 
 
     <div id="habilidades" class="container text-center rounded-4 bg-body-secondary my-5 py-5">
@@ -129,7 +132,7 @@
         <button class="btn rounded-5 btn-secondary">Proyectos</button>
         <div class="row mt-5 d-flex align-items-stretch">
             <div class="col-4 d-flex align-items-stretch">
-                <a href="portfolio.html" class="text-decoration-none">
+                <a href="memorama.html" class="text-decoration-none">
                     <div class="card text-start">
                         <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
                             <!--<div class="carousel-indicators">
@@ -163,7 +166,8 @@
                             </button>
                         </div>
                         <h4 class="card-title fw-semibold mt-4 mx-3">Memorama</h4>
-                        <p class="card-text mb-4 mx-3">Proyecto sobre un juego de memoria realizado con JavaScript.</p>
+                        <p class="card-text mb-4 mx-3 text-secondary">Proyecto sobre un juego de memoria realizado con
+                            JavaScript.</p>
                     </div>
                 </a>
             </div>
@@ -202,7 +206,8 @@
                             </button>
                         </div>
                         <h4 class="card-title fw-semibold mt-4 mx-3">Podcast</h4>
-                        <p class="card-text mb-4 mx-3">Landing Page sobre un Podcast para dieño de interfaces web.</p>
+                        <p class="card-text mb-4 mx-3 text-secondary">Landing Page sobre un Podcast para dieño de
+                            interfaces web.</p>
                     </div>
                 </a>
             </div>
@@ -243,7 +248,8 @@
                             </button>
                         </div>
                         <h4 class="card-title fw-semibold mt-4 mx-3">Portfolio</h4>
-                        <p class="card-text mb-4 mx-3">Proyecto sobre un portfolio personal hecho con HTML, CSS y JS.
+                        <p class="card-text mb-4 mx-3 text-secondary">Proyecto sobre un portfolio personal hecho con
+                            HTML, CSS y JS.
                         </p>
                     </div>
                 </a>
@@ -268,7 +274,7 @@
                 </div>
                 <div class="col-4 text-start">
                     <h4 class="fw-semibold">Experiencia</h4>
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled text-secondary">
                         <li>Puesto: Desarrollador Web</li>
                         <li>Duración: 7 meses</li>
                         <li>Modalidad: Trabajo en remoto</li>
@@ -276,7 +282,7 @@
                 </div>
                 <div class="col-4 text-start">
                     <h4 class="fw-semibold">Roles</h4>
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled text-secondary">
                         <li>Creación de páginas web</li>
                         <li>Administración de webs</li>
                         <li>Administración del servidor web</li>
@@ -311,7 +317,7 @@
                 <h4 class="text-bg-info text-white rounded-2 p-2">Udemy</h4>
                 <h5 class="fw-semibold">Curso Profesional de Desarrollo Web: Html, Css, Sass, Bootstrap, Js, Jquery,
                     Wordpress y Figma (42hr)</h5>
-                    <img src="../img/certificadoudemy1.png" class="img-fluid img-thumbnail mt-2" alt="">
+                <img src="../img/certificadoudemy1.png" class="img-fluid img-thumbnail mt-2" alt="">
             </div>
 
             <div class="col-4 text-start card rounded border  m-0 p-5" data-bs-toggle="modal"
@@ -477,13 +483,17 @@
 
         <div id="contacto" class="container text-center rounded-4 bg-body-secondary my-5 p-5">
             <button class="btn rounded-5 btn-secondary">Contacto</button>
-            <div class="row mt-5 d-flex flex-row align-items-center">
-                <div class="col-6 text-start">
-                    <h4>Contacto</h4>
-                    <p>Escríbeme a <a href="mailto:e.garcia@liceolapaz.net">e.garcia@liceolapaz.net</a> o
-                        encuéntrame en <a href="https://www.linkedin.com/in/eloygarciamartinez/">Linkedin</a>. Estoy
+            <div class="row d-flex flex-row align-items-center justify-content-center mt-5">
+                <div class="col-4 text-start">
+                    <h2 class="text-white">Contacto</h2>
+                    <p>Escríbeme a <a href="mailto:e.garcia@liceolapaz.net"
+                            class="text-secondary">e.garcia@liceolapaz.net</a> o
+                        encuéntrame en <a href="https://www.linkedin.com/in/eloygarciamartinez/"
+                            class="text-secondary">Linkedin</a>. Estoy
                         listo
                         para colaborar contigo!</p>
+                </div>
+                <div class="col-4">
                     <form action="/action_page.php" class="d-flex gap-2 flex-column">
                         <div class="form-group">
                             <input type="nombre" placeholder="Nombre" class="form-control rounded-0 p-3 w-75"
@@ -495,19 +505,88 @@
                         <button type="submit" class="btn btn-dark rounded-0 p-3 w-25">Enviar</button>
                     </form>
                 </div>
+            </div>
+            <!--
+                <div class="col-4 d-flex flex-row align-items-center justify-content-center">
+                        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                        <dotlottie-player src="https://lottie.host/7d55ec3d-c35e-4081-a750-a78e0b894e12/L1H8mw0rOP.lottie" background="transparent" speed="1" style="width: 450px; height: 450px; margin: 0; padding: 0;" loop autoplay></dotlottie-player>
+                </div>
+                -->
+        </div>
 
-                <div class="col-6 text-start">
-                    <div class="d-flex flex-column">
-                        <i class="fab fa-linkedin mb-3 display-5"></i>
-                        <i class="fab fa-github mb-3 display-5"></i>
+
+
+        <footer class="border-2 border text-black text-start rounded-4 mt-5">
+            <div class="container p-4">
+                <div class="row d-flex">
+                    <div class="col-4 mb-4 mb-md-0">
+                        <h5 class="text-white">Puedes contactarme en: </h5>
+                        <div class="d-flex flex-row gap-3 mt-3">
+                            <i class="fab fa-linkedin mb-3 display-6 text-secondary"></i>
+                            <i class="fab fa-github mb-3 display-6 text-secondary"></i>
+                        </div>
+                    </div>
+                    <div class="col-4 mb-4 mb-md-0">
+                        <h5 class="text-white">Enlaces</h5>
+                        <ul class="list-unstyled mb-0 text-secondary">
+                            <li>
+                                <a href="#inicio" class="text-decoration-none text-secondary">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="#habilidades" class="text-decoration-none text-secondary">Habilidades</a>
+                            </li>
+                            <li>
+                                <a href="#proyectos" class="text-decoration-none text-secondary">Proyectos</a>
+                            </li>
+                            <li>
+                                <a href="#experiencia" class="text-decoration-none text-secondary">Experiencia</a>
+                            </li>
+                            <li>
+                                <a href="#formacion" class="text-decoration-none text-secondary">Formacion</a>
+                            </li>
+                            <li>
+                                <a href="#contacto" class="text-decoration-none text-secondary">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4 mb-4 mb-md-0">
+                        <h5 class="text-white">Enlaces</h5>
+                        <ul class="list-unstyled mb-0 text-black">
+                            <li>
+                                <a href="#inicio" class="text-decoration-none text-secondary">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="#habilidades" class="text-decoration-none text-secondary">Habilidades</a>
+                            </li>
+                            <li>
+                                <a href="#proyectos" class="text-decoration-none text-secondary">Proyectos</a>
+                            </li>
+                            <li>
+                                <a href="#experiencia" class="text-decoration-none text-secondary">Experiencia</a>
+                            </li>
+                            <li>
+                                <a href="#formacion" class="text-decoration-none text-secondary">Formacion</a>
+                            </li>
+                            <li>
+                                <a href="#contacto" class="text-decoration-none text-secondary">Contacto</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
+            <div class="text-center p-3 m-3 text-white">
+                © 2025 Copyright:
+                <a class="text-secondary" href="https://e7oy.github.io/">e7oy.github.io</a>
+            </div>
+        </footer>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-                crossorigin="anonymous"></script>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
