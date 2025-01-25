@@ -12,8 +12,11 @@
 
 <body class="m-0 mx-auto">
 
-    <nav class="navbar navbar-expand-lg w-50 p-4 border-1 border rounded-3 text-center mx-auto mt-2">
+    <nav class="navbar navbar-expand-lg w-50 p-4 text-center mx-auto mt-2">
         <div class="container-fluid">
+            <button class="navbar-toggler mb-4 mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                 <ul class="navbar-nav d-flex gap-1">
                     <li class="nav-item">
@@ -34,43 +37,41 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
-
-                    <button type="button" class="btn btn-secondary">Descargar CV</button>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-secondary">Descargar CV</button>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div id="inicio" class="w-75 row mx-auto d-flex justify-content-around align-items-center py-5">
-        <div class="col-6">
-            <h1 class="fw-bold">Eloy García Martínez</h1>
-            <p class="text-secondary">¡Hola! Soy Eloy García, programador web y actual estudiante del ciclo superior de
-                DAW (Desarrollo de Aplicaciones Web). Me gusta estar en continuo aprendizaje y ayudar a
-                empresas y emprendedores a tener un hueco en el mundo de Internet.
-            </p>
-            <div class="info d-flex flex-row align-items-center text-secondary">
-                <i class="fas fa-map-marker-alt me-2"></i>
-                <span class="">A Coruña</span><span class="mx-2" id="display-time"></span><span id="temp"
-                    class="text-secondary"></span>
+    <div id="inicio" class="container w-75 mx-auto py-5">
+        <div class="row d-flex justify-content-around align-items-center">
+            <div class="col-12 col-md-6">
+                <h1 class="fw-bold">Eloy García Martínez</h1>
+                <p class="text-secondary">¡Hola! Soy Eloy García, programador web y actual estudiante del ciclo superior de
+                    DAW (Desarrollo de Aplicaciones Web). Me gusta estar en continuo aprendizaje y ayudar a
+                    empresas y emprendedores a tener un hueco en el mundo de Internet.
+                </p>
+                <div class="info d-flex flex-row align-items-center text-secondary">
+                    <i class="fas fa-map-marker-alt me-2"></i>
+                    <span class="">A Coruña</span><span class="mx-2" id="display-time"></span><span id="temp"
+                        class="text-secondary"></span>
+                </div>
+                <div class="info d-flex flex-row align-items-center text-secondary">
+                    <i class="fas fa-book me-2"></i>
+                    <span>Estudiante en <a class="text-secondary" href="https://liceolapaz.com">Liceo La Paz</a></span>
+                </div>
+                <div class="info d-flex flex-row align-items-center mt-3 text-secondary">
+                    <i class="fab fa-linkedin me-3"></i>
+                    <i class="fab fa-github me-3"></i>
+                </div>
             </div>
-            <div class="info d-flex flex-row align-items-center text-secondary">
-                <i class="fas fa-book me-2"></i>
-                <span>Estudiante en <a class="text-secondary" href="https://liceolapaz.com">Liceo La Paz</a></span>
+            <div class="col-12 col-md-3 mt-4 mt-md-0 text-center">
+                <img src="../img/Group 5(1).png" class="img-fluid shadow-lg w-75 rounded-circle" alt="img eloy">
             </div>
-            <div class="info d-flex flex-row align-items-center mt-3 text-secondary">
-                <i class="fab fa-linkedin me-3"></i>
-                <i class="fab fa-github me-3"></i>
-            </div>
-
-
         </div>
-        <div class="col-3">
-            <img src="../img/Group 5(1).png" class="img-fluid shadow-lg w-75 rounded-circle" alt="img eloy">
-        </div>
-
     </div>
-    <!--<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-    <dotlottie-player src="https://lottie.host/70832782-639d-473f-ab0e-516226c23266/x5ZWkOi0Op.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>-->
 
 
     <div id="habilidades" class="container text-center rounded-4 bg-body-secondary my-5 py-5">
@@ -81,45 +82,45 @@
             </div>
         </div>
         <div class="row d-flex justify-content-evenly text-center align-items-center p-5">
-            <div class="col-2">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
                 <i class="fab fa-js icon-js fa-4x mb-2"></i>
                 <h5 class="text-muted">JavaScript</h5>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
                 <i class="fab fa-react icon-react fa-4x mb-2"></i>
                 <h5 class="text-muted">React</h5>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
                 <i class="fab fa-java icon-java fa-4x mb-2"></i>
                 <h5 class="text-muted">Java</h5>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
                 <img src="../img/spring-logo.png" class="img-fluid w-50 mb-2" alt="">
                 <h5 class="text-muted">Spring</h5>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
                 <i class="fab fa-php icon-php fa-4x mb-2"></i>
                 <h5 class="text-muted">PHP</h5>
             </div>
         </div>
         <div class="row d-flex justify-content-evenly text-center align-items-center p-5">
-            <div class="col-2">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
                 <i class="fab fa-git icon-git fa-4x mb-2"></i>
                 <h5 class="text-muted">GIT</h5>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
                 <i class="fab fa-figma icon-figma fa-4x mb-2"></i>
                 <h5 class="text-muted">Figma</h5>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
                 <img src="../img/Tailwind_CSS_Logo.svg.png" class="img-fluid w-50 mb-2" alt="">
                 <h5 class="text-muted">Tailwind</h5>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
                 <i class="fab fa-sass icon-sass fa-4x mb-2"></i>
                 <h5 class="text-muted">Sass</h5>
             </div>
-            <div class="col-2">
+            <div class="col-6 col-md-4 col-lg-2 mb-4">
                 <i class="fab fa-symfony icon-symfony fa-4x mb-2"></i>
                 <h5 class="text-muted">Symfony</h5>
             </div>
@@ -130,18 +131,10 @@
     <div id="proyectos" class="container text-center rounded-4 my-5 py-5">
         <button class="btn rounded-5 btn-secondary">Proyectos</button>
         <div class="row mt-5 d-flex align-items-stretch">
-            <div class="col-4 d-flex align-items-stretch">
-                <a href="memorama.html" class="text-decoration-none">
+            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <a href="memorama.html" class="text-decoration-none w-100">
                     <div class="card text-start">
                         <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
-                            <!--<div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>-->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="../img/memorama.png" class="d-block w-100" alt="...">
@@ -153,35 +146,24 @@
                                     <img src="../img/mamoramawatch.png" class="d-block w-100" alt="...">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
                         <h4 class="card-title fw-semibold mt-4 mx-3">Memorama</h4>
-                        <p class="card-text mb-4 mx-3 text-secondary">Proyecto sobre un juego de memoria realizado con
-                            JavaScript.</p>
+                        <p class="card-text mb-4 mx-3 text-secondary">Proyecto sobre un juego de memoria realizado con JavaScript.</p>
                     </div>
                 </a>
             </div>
-            <div class="col-4 d-flex align-items-stretch">
-                <a href="podcast.html" class="text-decoration-none">
+            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <a href="podcast.html" class="text-decoration-none w-100">
                     <div class="card text-start">
                         <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
-                            <!--<div class="carousel-indicators">
-                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                 class="active" aria-current="true" aria-label="Slide 1"></button>
-                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                 aria-label="Slide 2"></button>
-                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                 aria-label="Slide 3"></button>
-                         </div>-->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="../img/podcastproject.png" class="d-block w-100" alt="...">
@@ -193,37 +175,24 @@
                                     <img src="../img/podcastwatch.png" class="d-block w-100" alt="...">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
                         <h4 class="card-title fw-semibold mt-4 mx-3">Podcast</h4>
-                        <p class="card-text mb-4 mx-3 text-secondary">Landing Page sobre un Podcast para dieño de
-                            interfaces web.</p>
+                        <p class="card-text mb-4 mx-3 text-secondary">Landing Page sobre un Podcast para diseño de interfaces web.</p>
                     </div>
                 </a>
             </div>
-
-
-            <div class="col-4 d-flex align-items-stretch">
-                <a href="portfolio.html" class="text-decoration-none">
+            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                <a href="portfolio.html" class="text-decoration-none w-100">
                     <div class="card text-start">
                         <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
-                            <!--<div class="carousel-indicators">
-                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                 class="active" aria-current="true" aria-label="Slide 1"></button>
-                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                 aria-label="Slide 2"></button>
-                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                 aria-label="Slide 3"></button>
-                         </div>-->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="../img/portfolio.png" class="d-block w-100" alt="...">
@@ -235,21 +204,17 @@
                                     <img src="../img/portfoliowatch (2).png" class="d-block w-100" alt="...">
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
                         <h4 class="card-title fw-semibold mt-4 mx-3">Portfolio</h4>
-                        <p class="card-text mb-4 mx-3 text-secondary">Proyecto sobre un portfolio personal hecho con
-                            HTML, CSS y JS.
-                        </p>
+                        <p class="card-text mb-4 mx-3 text-secondary">Proyecto sobre un portfolio personal hecho con HTML, CSS y JS.</p>
                     </div>
                 </a>
             </div>
@@ -265,13 +230,13 @@
                 <h4 class="fw-light">Estas han sido mis últimas experiencias laborales.</h4>
             </div>
         </div>
-
+    
         <div class="card shadow rounded border w-75 mx-auto m-0 p-5">
             <div class="row d-flex align-items-center justify-content-center">
-                <div class="col-4 text-start">
+                <div class="col-12 col-md-4 text-start mb-4 mb-md-0">
                     <img src="../img/serviceboxlogo.png" class="img-fluid w-75" alt="">
                 </div>
-                <div class="col-4 text-start">
+                <div class="col-12 col-md-4 text-start mb-4 mb-md-0">
                     <h4 class="fw-semibold">Experiencia</h4>
                     <ul class="list-unstyled text-secondary">
                         <li>Puesto: Desarrollador Web</li>
@@ -279,7 +244,7 @@
                         <li>Modalidad: Trabajo en remoto</li>
                     </ul>
                 </div>
-                <div class="col-4 text-start">
+                <div class="col-12 col-md-4 text-start">
                     <h4 class="fw-semibold">Roles</h4>
                     <ul class="list-unstyled text-secondary">
                         <li>Creación de páginas web</li>
@@ -341,7 +306,6 @@
             </div>
         </div>
 
-        <!-- Modales -->
         <div class="modal fade" id="modalLiceoLaPaz1" tabindex="-1" aria-labelledby="modalLiceoLaPaz1Label"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -483,20 +447,16 @@
         <div id="contacto" class="container text-center rounded-4 bg-body-secondary my-5 p-5">
             <button class="btn rounded-5 btn-secondary">Contacto</button>
             <div class="row d-flex flex-row align-items-center justify-content-center mt-5">
-                <div class="col-4 text-start">
+                <div class="col-12 col-md-6 text-start mb-4 mb-md-0">
                     <h2 class="text-white">Contacto</h2>
-                    <p>Escríbeme a <a href="mailto:e.garcia@liceolapaz.net"
-                            class="text-secondary">e.garcia@liceolapaz.net</a> o
-                        encuéntrame en <a href="https://www.linkedin.com/in/eloygarciamartinez/"
-                            class="text-secondary">Linkedin</a>. Estoy
-                        listo
-                        para colaborar contigo!</p>
+                    <p>Escríbeme a <a href="mailto:e.garcia@liceolapaz.net" class="text-secondary">e.garcia@liceolapaz.net</a> o
+                        encuéntrame en <a href="https://www.linkedin.com/in/eloygarciamartinez/" class="text-secondary">Linkedin</a>. Estoy
+                        listo para colaborar contigo!</p>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-6">
                     <form action="/action_page.php" class="d-flex gap-2 flex-column">
                         <div class="form-group">
-                            <input type="nombre" placeholder="Nombre" class="form-control rounded-0 p-3 w-100"
-                                id="nombre">
+                            <input type="text" placeholder="Nombre y apellidos" class="form-control rounded-0 p-3 w-100" id="nombre">
                         </div>
                         <div class="form-group">
                             <input type="email" placeholder="Email" class="form-control rounded-0 p-3 w-100" id="email">
@@ -505,27 +465,20 @@
                     </form>
                 </div>
             </div>
-            <!--
-                <div class="col-4 d-flex flex-row align-items-center justify-content-center">
-                        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-                        <dotlottie-player src="https://lottie.host/7d55ec3d-c35e-4081-a750-a78e0b894e12/L1H8mw0rOP.lottie" background="transparent" speed="1" style="width: 450px; height: 450px; margin: 0; padding: 0;" loop autoplay></dotlottie-player>
-                </div>
-                -->
         </div>
 
 
-
-        <footer class="border-2 border text-black text-start rounded-4 p-4 mt-5">
+        <footer class="border-2 border text-black text-start rounded-4 p-4 w-100 mx-auto m-0 my-5">
             <div class="container p-4">
                 <div class="row d-flex">
-                    <div class="col-3 mb-4 mb-md-0">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
                         <h5 class="text-white">Puedes contactarme en: </h5>
                         <div class="d-flex flex-row gap-3 mt-3">
                             <i class="fab fa-linkedin mb-3 display-6 text-secondary"></i>
                             <i class="fab fa-github mb-3 display-6 text-secondary"></i>
                         </div>
                     </div>
-                    <div class="col-3 mb-4 mb-md-0">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
                         <h5 class="text-white">Enlaces</h5>
                         <ul class="list-unstyled mb-0 text-secondary">
                             <li>
@@ -548,9 +501,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-3 mb-4 mb-md-0">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
                         <h5 class="text-white">Enlaces</h5>
-                        <ul class="list-unstyled mb-0 text-black">
+                        <ul class="list-unstyled mb-0 text-secondary">
                             <li>
                                 <a href="#inicio" class="text-decoration-none text-secondary">Inicio</a>
                             </li>
@@ -571,10 +524,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-3" id="github-activity"></div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                        <a href="https://github.com/E7OY" target="_blank">
+                            <div id="github-activity"></div>
+                        </a>
+                    </div>
                 </div>
             </div>
-
+        
             <div class="text-center p-3 m-3 text-white">
                 © 2025 Copyright:
                 <a class="text-secondary" href="https://e7oy.github.io/">e7oy.github.io</a>

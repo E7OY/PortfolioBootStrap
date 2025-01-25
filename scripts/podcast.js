@@ -1,6 +1,6 @@
 async function fetchCommitActivity() {
     const username = 'E7OY';
-    const token = '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'; // Reemplaza esto con tu token de acceso personal
+    const token = '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';
     const commitsContainer = document.getElementById('github-activity');
     const commitCounts = {};
     const currentDate = new Date();
@@ -9,7 +9,7 @@ async function fetchCommitActivity() {
     let page = 1;
     let hasMoreEvents = true;
 
-    // Fetch user info
+
     const userInfoResponse = await fetch(`https://api.github.com/users/${username}`, {
         headers: {
             'Authorization': `token ${token}`
@@ -17,7 +17,6 @@ async function fetchCommitActivity() {
     });
     const userInfo = await userInfoResponse.json();
 
-    // Display user info
     const userInfoContainer = document.createElement('div');
     userInfoContainer.className = 'user-info text-center mb-4';
     userInfoContainer.innerHTML = `
@@ -62,7 +61,7 @@ async function fetchCommitActivity() {
     for (let d = new Date(threeMonthsAgoDate); d <= currentDate; d.setDate(d.getDate() + 1)) {
         const dateStr = d.toISOString().split('T')[0];
         const count = commitCounts[dateStr] || 0;
-        const level = Math.min(4, Math.floor(count / 2)); // Adjust the level calculation as needed
+        const level = Math.min(4, Math.floor(count / 2));
 
         const day = document.createElement('div');
         day.className = `day level-${level}`;
