@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" data-bs-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,542 +13,612 @@
 
 <body class="m-0 mx-auto">
 
-    <nav class="navbar navbar-expand-lg w-50 p-4 text-center mx-auto mt-2">
-        <div class="container-fluid">
-            <button class="navbar-toggler mb-4 mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                <ul class="navbar-nav d-flex gap-1">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#inicio">Sobre mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#habilidades">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#proyectos">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experiencia">Experiencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#formacion">Formacion</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="../img/cv.pdf" class="btn btn-secondary" download="Eloy_Garcia_Martinez_CV.pdf">Descargar CV</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <div id="inicio" class="container w-75 mx-auto py-5">
-        <div class="row d-flex justify-content-around align-items-center">
-            <div class="col-12 col-md-6">
-                <h1 class="fw-bold">Eloy García Martínez</h1>
-                <p class="text-secondary">¡Hola! Soy Eloy García, programador web y actual estudiante del ciclo superior de
-                    DAW (Desarrollo de Aplicaciones Web). Me gusta estar en continuo aprendizaje y ayudar a
-                    empresas y emprendedores a tener un hueco en el mundo de Internet.
-                </p>
-                <div class="info d-flex flex-row align-items-center text-secondary">
-                    <i class="fas fa-map-marker-alt me-2"></i>
-                    <span class="">A Coruña</span><span class="mx-2" id="display-time"></span><span id="temp"
-                        class="text-secondary"></span>
-                </div>
-                <div class="info d-flex flex-row align-items-center text-secondary">
-                    <i class="fas fa-book me-2"></i>
-                    <span>Estudiante en <a class="text-secondary" href="https://liceolapaz.com">Liceo La Paz</a></span>
-                </div>
-                <div class="info d-flex flex-row align-items-center mt-3 text-secondary">
-                    <i class="fab fa-linkedin me-3"></i>
-                    <i class="fab fa-github me-3"></i>
-                </div>
-            </div>
-            <div class="col-12 col-md-3 mt-4 mt-md-0 text-center">
-                <img src="../img/imgeloy.png" class="img-fluid shadow-lg w-75 rounded-circle" alt="img eloy">
-            </div>
-        </div>
-    </div>
-
-
-    <div id="habilidades" class="container text-center rounded-4 bg-body-secondary my-5 py-5">
-        <button class="btn rounded-5 btn-secondary">Habilidades</button>
-        <div class="row d-flex justify-content-evenly align-items-center p-4">
-            <div class="col-12 text-center">
-                <h4 class="fw-light">Habilidades y tecnologías que domino</h4>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-evenly text-center align-items-center p-5">
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <i class="fab fa-js icon-js fa-4x mb-2"></i>
-                <h5 class="text-muted">JavaScript</h5>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <i class="fab fa-react icon-react fa-4x mb-2"></i>
-                <h5 class="text-muted">React</h5>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <i class="fab fa-java icon-java fa-4x mb-2"></i>
-                <h5 class="text-muted">Java</h5>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <img src="../img/spring-logo.png" class="img-fluid w-50 mb-2" alt="logo spring">
-                <h5 class="text-muted">Spring</h5>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <i class="fab fa-php icon-php fa-4x mb-2"></i>
-                <h5 class="text-muted">PHP</h5>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-evenly text-center align-items-center p-5">
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <i class="fab fa-git icon-git fa-4x mb-2"></i>
-                <h5 class="text-muted">GIT</h5>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <i class="fab fa-figma icon-figma fa-4x mb-2"></i>
-                <h5 class="text-muted">Figma</h5>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <img src="../img/Tailwind_CSS_Logo.svg.png" class="img-fluid w-50 mb-2" alt="logo tailwind">
-                <h5 class="text-muted">Tailwind</h5>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <i class="fab fa-sass icon-sass fa-4x mb-2"></i>
-                <h5 class="text-muted">Sass</h5>
-            </div>
-            <div class="col-6 col-md-4 col-lg-2 mb-4">
-                <i class="fab fa-symfony icon-symfony fa-4x mb-2"></i>
-                <h5 class="text-muted">Symfony</h5>
-            </div>
-        </div>
-    </div>
-
-
-    <div id="proyectos" class="container text-center rounded-4 my-5 py-5">
-        <button class="btn rounded-5 btn-secondary">Proyectos</button>
-        <div class="row mt-5 d-flex align-items-stretch">
-            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                    <div class="card text-start">
-                        <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
-                            <a href="memorama.html" class="text-decoration-none w-100">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="../img/memorama.png" class="d-block w-100" alt="memorama desktop">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../img/memoramamobiles.png" class="d-block w-100" alt="memorama mobile">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../img/mamoramawatch.png" class="d-block w-100" alt="memorama watch">
-                                </div>
-                            </div>
-                            </a>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <h4 class="card-title fw-semibold mt-4 mx-3">Memorama</h4>
-                        <p class="card-text mb-4 mx-3 text-secondary">Proyecto sobre un juego de memoria realizado con JavaScript.</p>
-                    </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                <div class="card text-start">
-                    <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
-                        <a href="podcast.html" class="text-decoration-none w-100">
-                        <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="../img/podcastproject.png" class="d-block w-100" alt="podcast desktop">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../img/podcastmobile.png" class="d-block w-100" alt="podcast mobile">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../img/podcastwatch.png" class="d-block w-100" alt="podcast watch">
-                                </div>
-                            </div>
-                        </a>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <h4 class="card-title fw-semibold mt-4 mx-3">Podcast</h4>
-                        <p class="card-text mb-4 mx-3 text-secondary">Landing Page sobre un Podcast para diseño de interfaces web.</p>
-                    </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                <div class="card text-start">
-                    <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
-                        <a href="portfolio.html" class="text-decoration-none w-100">
-                        <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="../img/portfolio.png" class="d-block w-100" alt="portfolio desktop">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../img/portfoliomobile.png" class="d-block w-100" alt="portfolio mobile">
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="../img/portfoliowatch.png" class="d-block w-100" alt="portfolio watch">
-                                </div>
-                            </div>
-                        </a>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <h4 class="card-title fw-semibold mt-4 mx-3">Portfolio</h4>
-                        <p class="card-text mb-4 mx-3 text-secondary">Proyecto sobre un portfolio personal hecho con HTML, CSS y JS.</p>
-                    </div>
-            </div>
-
-            <a href="https://github.com/E7OY?tab=repositories" class="text-decoration-none" target="_blank">Ver más proyectos en GitHub > </a>
-        </div>
-    </div>
-
-
-
-    <div id="experiencia" class="container text-center rounded-4 bg-body-secondary my-5 py-5">
-        <button class="btn rounded-5 btn-secondary">Experiencia</button>
-        <div class="row d-flex justify-content-evenly align-items-center p-4">
-            <div class="col-12 text-center">
-                <h4 class="fw-light">Estas han sido mis últimas experiencias laborales.</h4>
-            </div>
-        </div>
-    
-        <div class="card shadow rounded border w-75 mx-auto m-0 p-5">
-            <div class="row d-flex align-items-center justify-content-center">
-                <div class="col-12 col-md-4 text-start mb-4 mb-md-0">
-                    <img src="../img/serviceboxlogo.png" class="img-fluid w-75" alt="logo servicebox">
-                </div>
-                <div class="col-12 col-md-4 text-start mb-4 mb-md-0">
-                    <h4 class="fw-semibold">Experiencia</h4>
-                    <ul class="list-unstyled text-secondary">
-                        <li>Puesto: Desarrollador Web</li>
-                        <li>Duración: 7 meses</li>
-                        <li>Modalidad: Trabajo en remoto</li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-4 text-start">
-                    <h4 class="fw-semibold">Roles</h4>
-                    <ul class="list-unstyled text-secondary">
-                        <li>Creación de páginas web</li>
-                        <li>Administración de webs</li>
-                        <li>Administración del servidor web</li>
+    <header>
+        <nav class="navbar navbar-expand-lg w-50 p-4 text-center mx-auto mt-2">
+            <div class="container-fluid">
+                <button class="navbar-toggler mb-4 mx-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav d-flex gap-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiencia">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formacion">Formacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../img/cv.pdf" class="btn btn-secondary"
+                                download="Eloy_Garcia_Martinez_CV.pdf">Descargar CV</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
+    <main>
 
-
-    <div id="formacion" class="container text-center rounded-4 my-5 p-5">
-        <button class="btn rounded-5 btn-secondary">Formación</button>
-        <div class="row d-flex align-items-stretch flex-row justify-content-center mt-5 gap-1 mb-1">
-    
-            <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex justify-content-center align-content-center flex-column gap-3" data-bs-toggle="modal"
-                data-bs-target="#modalLiceoLaPaz1">
-                <img src="../img/logoliceolapaz.png" class="img-fluid" width="150" alt="logo liceo la paz">
-                <h5 class="text-white fw-light">Sistemas Microinformáticos y Redes (2000hr)</h5>
-            </div>
-    
-            <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex justify-content-center align-content-center flex-column gap-3" data-bs-toggle="modal"
-                data-bs-target="#modalLiceoLaPaz2">
-                <img src="../img/logoliceolapaz.png" class="img-fluid" width="150" alt="logo liceo la paz">
-                <h5 class="fw-light text-white">Desarrollo de Aplicaciones Web (2000hr)</h5>
-            </div>
-    
-            <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex flex-column align-content-center gap-3" data-bs-toggle="modal"
-                data-bs-target="#modalUdemy1">
-                <img src="../img/logoudemy.png" class="img-fluid" width="150" alt="logo udemy">
-                <h5 class="fw-light text-white">Curso Profesional de Desarrollo Web: Html, Css, Sass, Bootstrap, Js, Jquery,
-                    Wordpress y Figma (42hr)</h5>
-            </div>
-    
-        </div>
-    
-        <div class="row d-flex align-items-stretch flex-row justify-content-center gap-1">
-            <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex align-content-center flex-column gap-3" data-bs-toggle="modal"
-                data-bs-target="#modalUdemy2">
-                <img src="../img/logoudemy.png" class="img-fluid" width="150" alt="logo udemy">
-                <h5 class="fw-light text-white">Máster en Java , 0 a experto, Universidad, GS, DAM, DAW (54hr)</h5>
-            </div>
-    
-            <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex flex-column align-content-center gap-3" data-bs-toggle="modal"
-                data-bs-target="#modalGoogle1">
-                <img src="../img/logogoogle.png" class="img-fluid" width="150" alt="logo google">
-                <h5 class="fw-light text-white">Curso de Introducción al Desarrollo Web: HTML y CSS (1/2) (40hr)</h5>
-            </div>
-    
-            <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex flex-column align-content-center gap-3" data-bs-toggle="modal"
-                data-bs-target="#modalGoogle2">
-                <img src="../img/logogoogle.png" class="img-fluid" width="150" alt="logo google">
-                <h5 class="fw-light text-white">Curso de Introducción al Desarrollo Web: HTML y CSS (2/2) (40hr)</h5>
-            </div>
-        </div>
-    </div>
-
-        <div class="modal fade" id="modalLiceoLaPaz1" tabindex="-1" aria-labelledby="modalLiceoLaPaz1Label"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalLiceoLaPaz1Label">Liceo La Paz - Sistemas Microinformáticos y
-                            Redes (2000hr)</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p class="text-muted">
-                            Este ciclo te permitirá instalar y mantener servicios de redes, equipos y sistemas
-                            informáticos en entornos monousuario y multiusuario y servicios de Internet.
-                            Elaborar páginas web dinámicas, utilizando las herramientas más avanzadas en diseño Web.
-                            Mantenimiento de servicios de internet: servidor web, correo, proxys...
-                            Dar soporte al usuario resolviendo los problemas que se presentan en la explotación del
-                            servicio de red, del sistema informático y de las aplicaciones ofimáticas, siguiendo
-                            protocolos de actuación establecidos.
+        <section class="inicio">
+            <div id="inicio" class="container w-75 mx-auto py-5">
+                <div class="row d-flex justify-content-around align-items-center">
+                    <div class="col-12 col-md-6">
+                        <h1 class="fw-bold">Eloy García Martínez</h1>
+                        <p class="text-secondary">¡Hola! Soy Eloy García, programador web y actual estudiante del ciclo
+                            superior de
+                            DAW (Desarrollo de Aplicaciones Web). Me gusta estar en continuo aprendizaje y ayudar a
+                            empresas y emprendedores a tener un hueco en el mundo de Internet.
                         </p>
+                        <div class="info d-flex flex-row align-items-center text-secondary">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            <span class="">A Coruña</span><span class="mx-2" id="display-time"></span><span id="temp"
+                                class="text-secondary"></span>
+                        </div>
+                        <div class="info d-flex flex-row align-items-center text-secondary">
+                            <i class="fas fa-book me-2"></i>
+                            <span>Estudiante en <a class="text-secondary" href="https://liceolapaz.com">Liceo La
+                                    Paz</a></span>
+                        </div>
+                        <div class="info d-flex flex-row align-items-center mt-3 text-secondary">
+                            <i class="fab fa-linkedin me-3"></i>
+                            <i class="fab fa-github me-3"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 mt-4 mt-md-0 text-center">
+                        <img src="../img/imgeloy.png" class="img-fluid shadow-lg w-75 rounded-circle" alt="img eloy">
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="modal fade" id="modalLiceoLaPaz2" tabindex="-1" aria-labelledby="modalLiceoLaPaz2Label"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalLiceoLaPaz2Label">Liceo La Paz - Desarrollo de Aplicaciones Web
-                            (2000hr)</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <section class="habilidades">
+            <div id="habilidades" class="container text-center rounded-4 bg-body-secondary my-5 py-5">
+                <button class="btn rounded-5 btn-secondary">Habilidades</button>
+                <div class="row d-flex justify-content-evenly align-items-center p-4">
+                    <div class="col-12 text-center">
+                        <h4 class="fw-light">Habilidades y tecnologías que domino</h4>
                     </div>
-                    <div class="modal-body">
-                        <p class="text-muted">
-                            Este Ciclo te permitirá desarrollar, implantar y mantener aplicaciones web. Configurar y
-                            explotar sistemas informáticos. Aplicar técnicas y procedimientos relacionados con la
-                            seguridad en sistemas. Gestionar servidores de aplicaciones. Gestionar bases de datos.
-                            Desarrollar componentes multimedia para su integración en aplicaciones web. Desarrollar e
-                            integrar componentes software en el entorno del servidor web.
-                        </p>
+                </div>
+                <div class="row d-flex justify-content-evenly text-center align-items-center p-5">
+                    <div class="col-6 col-md-4 col-lg-2 mb-4">
+                        <i class="fab fa-js icon-js fa-4x mb-2"></i>
+                        <h5 class="text-muted">JavaScript</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mb-4">
+                        <i class="fab fa-react icon-react fa-4x mb-2"></i>
+                        <h5 class="text-muted">React</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mb-4">
+                        <i class="fab fa-java icon-java fa-4x mb-2"></i>
+                        <h5 class="text-muted">Java</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mb-4">
+                        <img src="../img/spring-logo.png" class="img-fluid w-50 mb-2" alt="logo spring">
+                        <h5 class="text-muted">Spring</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mb-4">
+                        <i class="fab fa-php icon-php fa-4x mb-2"></i>
+                        <h5 class="text-muted">PHP</h5>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-evenly text-center align-items-center p-5">
+                    <div class="col-6 col-md-4 col-lg-2 mb-4">
+                        <i class="fab fa-git icon-git fa-4x mb-2"></i>
+                        <h5 class="text-muted">GIT</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mb-4">
+                        <i class="fab fa-figma icon-figma fa-4x mb-2"></i>
+                        <h5 class="text-muted">Figma</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mb-4">
+                        <img src="../img/Tailwind_CSS_Logo.svg.png" class="img-fluid w-50 mb-2" alt="logo tailwind">
+                        <h5 class="text-muted">Tailwind</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mb-4">
+                        <i class="fab fa-sass icon-sass fa-4x mb-2"></i>
+                        <h5 class="text-muted">Sass</h5>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 mb-4">
+                        <i class="fab fa-symfony icon-symfony fa-4x mb-2"></i>
+                        <h5 class="text-muted">Symfony</h5>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="modal fade" id="modalUdemy1" tabindex="-1" aria-labelledby="modalUdemy1Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalUdemy1Label">Udemy - Curso Profesional de Desarrollo Web (42hr)
+        <section class="proyectos">
+            <div id="proyectos" class="container text-center rounded-4 my-5 py-5">
+                <button class="btn rounded-5 btn-secondary">Proyectos</button>
+                <div class="row mt-5 d-flex align-items-stretch">
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                        <div class="card text-start">
+                            <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                                <a href="memorama.html" class="text-decoration-none w-100">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/memorama.png" class="d-block w-100" alt="memorama desktop">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/memoramamobiles.png" class="d-block w-100"
+                                                alt="memorama mobile">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/mamoramawatch.png" class="d-block w-100"
+                                                alt="memorama watch">
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <h4 class="card-title fw-semibold mt-4 mx-3">Memorama</h4>
+                            <p class="card-text mb-4 mx-3 text-secondary">Proyecto sobre un juego de memoria realizado
+                                con JavaScript.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                        <div class="card text-start">
+                            <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                                <a href="podcast.html" class="text-decoration-none w-100">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/podcastproject.png" class="d-block w-100"
+                                                alt="podcast desktop">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/podcastmobile.png" class="d-block w-100"
+                                                alt="podcast mobile">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/podcastwatch.png" class="d-block w-100"
+                                                alt="podcast watch">
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <h4 class="card-title fw-semibold mt-4 mx-3">Podcast</h4>
+                            <p class="card-text mb-4 mx-3 text-secondary">Landing Page sobre un Podcast para diseño de
+                                interfaces web.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+                        <div class="card text-start">
+                            <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+                                <a href="portfolio.html" class="text-decoration-none w-100">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../img/portfolio.png" class="d-block w-100"
+                                                alt="portfolio desktop">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/portfoliomobile.png" class="d-block w-100"
+                                                alt="portfolio mobile">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="../img/portfoliowatch.png" class="d-block w-100"
+                                                alt="portfolio watch">
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <h4 class="card-title fw-semibold mt-4 mx-3">Portfolio</h4>
+                            <p class="card-text mb-4 mx-3 text-secondary">Proyecto sobre un portfolio personal hecho con
+                                HTML, CSS y JS.</p>
+                        </div>
+                    </div>
+
+                    <a href="https://github.com/E7OY?tab=repositories" class="text-decoration-none" target="_blank">Ver
+                        más proyectos en GitHub > </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="experiencia">
+            <div id="experiencia" class="container text-center rounded-4 bg-body-secondary my-5 py-5">
+                <button class="btn rounded-5 btn-secondary">Experiencia</button>
+                <div class="row d-flex justify-content-evenly align-items-center p-4">
+                    <div class="col-12 text-center">
+                        <h4 class="fw-light">Estas han sido mis últimas experiencias laborales.</h4>
+                    </div>
+                </div>
+
+                <div class="card shadow rounded border w-75 mx-auto m-0 p-5">
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-12 col-md-4 text-start mb-4 mb-md-0">
+                            <img src="../img/serviceboxlogo.png" class="img-fluid w-75" alt="logo servicebox">
+                        </div>
+                        <div class="col-12 col-md-4 text-start mb-4 mb-md-0">
+                            <h4 class="fw-semibold">Experiencia</h4>
+                            <ul class="list-unstyled text-secondary">
+                                <li>Puesto: Desarrollador Web</li>
+                                <li>Duración: 7 meses</li>
+                                <li>Modalidad: Trabajo en remoto</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 text-start">
+                            <h4 class="fw-semibold">Roles</h4>
+                            <ul class="list-unstyled text-secondary">
+                                <li>Creación de páginas web</li>
+                                <li>Administración de webs</li>
+                                <li>Administración del servidor web</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formacion">
+            <div id="formacion" class="container text-center rounded-4 my-5 p-5">
+                <button class="btn rounded-5 btn-secondary">Formación</button>
+                <div class="row d-flex align-items-stretch flex-row justify-content-center mt-5 gap-1 mb-1">
+
+                    <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex justify-content-center align-content-center flex-column gap-3"
+                        data-bs-toggle="modal" data-bs-target="#modalLiceoLaPaz1">
+                        <img src="../img/logoliceolapaz.png" class="img-fluid" width="150" alt="logo liceo la paz">
+                        <h5 class="text-white fw-light">Sistemas Microinformáticos y Redes (2000hr)</h5>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex justify-content-center align-content-center flex-column gap-3"
+                        data-bs-toggle="modal" data-bs-target="#modalLiceoLaPaz2">
+                        <img src="../img/logoliceolapaz.png" class="img-fluid" width="150" alt="logo liceo la paz">
+                        <h5 class="fw-light text-white">Desarrollo de Aplicaciones Web (2000hr)</h5>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex flex-column align-content-center gap-3"
+                        data-bs-toggle="modal" data-bs-target="#modalUdemy1">
+                        <img src="../img/logoudemy.png" class="img-fluid" width="150" alt="logo udemy">
+                        <h5 class="fw-light text-white">Curso Profesional de Desarrollo Web: Html, Css, Sass, Bootstrap,
+                            Js, Jquery,
+                            Wordpress y Figma (42hr)</h5>
+                    </div>
+
+                </div>
+
+                <div class="row d-flex align-items-stretch flex-row justify-content-center gap-1">
+                    <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex align-content-center flex-column gap-3"
+                        data-bs-toggle="modal" data-bs-target="#modalUdemy2">
+                        <img src="../img/logoudemy.png" class="img-fluid" width="150" alt="logo udemy">
+                        <h5 class="fw-light text-white">Máster en Java , 0 a experto, Universidad, GS, DAM, DAW (54hr)
                         </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <p class="text-muted">
-                            Introducción a Figma: Creación de bocetos de sitios web. Fundamentos del Diseño Web:
-                            Construcción de la primera página web con HTML y CSS. Diseño Web Adaptable: Creación de
-                            páginas responsivas para dispositivos móviles. Programación en JavaScript: Implementación de
-                            lógica y interactividad en las páginas web. jQuery: Adición de efectos y animaciones a las
-                            páginas web. Bootstrap 5: Utilización del framework para diseño web responsive rápido y
-                            sencillo. WordPress: Gestión de contenidos, desde la instalación hasta la creación de un
-                            blog real. Control de Versiones con Git y GitHub: Compartición y gestión del código.
-                            Publicación de Sitios Web: Proceso de subir páginas web a Internet.
-                        </p>
-                        <img src="../img/certificadoudemy1.png" class="img-fluid img-thumbnail mt-2" alt="certificado udemy">
+
+                    <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex flex-column align-content-center gap-3"
+                        data-bs-toggle="modal" data-bs-target="#modalGoogle1">
+                        <img src="../img/logogoogle.png" class="img-fluid" width="150" alt="logo google">
+                        <h5 class="fw-light text-white">Curso de Introducción al Desarrollo Web: HTML y CSS (1/2) (40hr)
+                        </h5>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex flex-column align-content-center gap-3"
+                        data-bs-toggle="modal" data-bs-target="#modalGoogle2">
+                        <img src="../img/logogoogle.png" class="img-fluid" width="150" alt="logo google">
+                        <h5 class="fw-light text-white">Curso de Introducción al Desarrollo Web: HTML y CSS (2/2) (40hr)
+                        </h5>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="modal fade" id="modalUdemy2" tabindex="-1" aria-labelledby="modalUdemy2Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalUdemy2Label">Udemy - Máster en Java (54hr)</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p class="text-muted">
-                            Bases de Java: Desde variables hasta estructuras de control. Programación Orientada a
-                            Objetos: Clases, métodos, herencia, polimorfismo. Aprobar Exámenes y Conseguir Empleo:
-                            Preparación para certificaciones y entrevistas. Bases de Datos: Manejo de bases de datos con
-                            JDBC. Programación Funcional: Uso de expresiones Lambda y Stream API. Programación
-                            Multihilo. Manejo de Excepciones y Colecciones. Interfaces Gráficas: Creación de GUIs con
-                            SWING. Comunicación entre Objetos en Java.
-                        </p>
-                        <img src="../img/certificadoudemy1.png" class="img-fluid img-thumbnail mt-2" alt="certificado udemy">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="modalGoogle1" tabindex="-1" aria-labelledby="modalGoogle1Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalGoogle1Label">Google - Curso de Introducción al Desarrollo Web:
-                            HTML y CSS (1/2) (40hr)</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p class="text-muted">
-                            Historia de la Web: Exploré cómo nació y evolucionó la Web hasta convertirse en lo que es
-                            hoy. Funcionamiento de la Web: Comprendí los principios básicos de cómo funciona la Web,
-                            incluyendo protocolos como HTTP y HTTPS. Creación de páginas web: Aprendí a escribir y
-                            estructurar correctamente páginas web utilizando HTML5. Publicación de sitios web: Conocí
-                            los pasos necesarios para alojar y publicar sitios web en servidores. Buenas prácticas en
-                            estructuración web: Me familiaricé con las mejores prácticas para estructurar contenido y
-                            aplicar estilos CSS para mejorar la apariencia visual de las páginas.
-                        </p>
-                        <img src="../img/certificadogoogle1.png" class="img-fluid img-thumbnail mt-2" alt="certificado google">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="modalGoogle2" tabindex="-1" aria-labelledby="modalGoogle2Label" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalGoogle2Label">Google - Curso de Introducción al Desarrollo Web:
-                            HTML y CSS (2/2) (40hr)</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p class="text-muted">
-                            Definición de la presentación de una página web: Aprendí a aplicar estilos CSS para definir
-                            la apariencia visual de páginas web. Definición de la presentación de los elementos de una
-                            página web: Me familiaricé con la estilización individual de componentes web utilizando CSS.
-                            Maquetación de una página web: Adquirí conocimientos sobre cómo estructurar y organizar el
-                            contenido de una página web de manera profesional utilizando técnicas de diseño y
-                            maquetación con CSS. Logro del éxito de una página web: Entendí los factores clave para
-                            crear páginas web exitosas, incluyendo la usabilidad, accesibilidad y rendimiento.
-                        </p>
-                        <img src="../img/certificadogoogle2.png" class="img-fluid img-thumbnail mt-2" alt="certificado google">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="contacto" class="container text-center rounded-4 bg-body-secondary my-5 p-5">
-            <button class="btn rounded-5 btn-secondary">Contacto</button>
-            <div class="row d-flex flex-row align-items-center justify-content-center mt-5">
-                <div class="col-12 col-md-6 text-start mb-4 mb-md-0">
-                    <h2 class="text-white">Contacto</h2>
-                    <p>Escríbeme a <a href="mailto:e.garcia@liceolapaz.net" class="text-secondary">e.garcia@liceolapaz.net</a> o
-                        encuéntrame en <a href="https://www.linkedin.com/in/eloygarciamartinez/" class="text-secondary">Linkedin</a>. Estoy
-                        listo para colaborar contigo!</p>
-                </div>
-                <div class="col-12 col-md-6">
-                    <form action="mailto:e.garcia@liceolapaz.net" class="d-flex gap-2 flex-column">
-                        <div class="form-group">
-                            <input type="text" placeholder="Nombre y apellidos" class="form-control rounded-0 p-3 w-100" id="nombre">
+            <div class="modal fade" id="modalLiceoLaPaz1" tabindex="-1" aria-labelledby="modalLiceoLaPaz1Label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLiceoLaPaz1Label">Liceo La Paz - Sistemas Microinformáticos
+                                y
+                                Redes (2000hr)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email" class="form-control rounded-0 p-3 w-100" id="email">
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" value="Enviar" class="form-control rounded-0 p-3 w-50" id="email">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
-
-        <footer class="border-2 border text-black text-start rounded-4 p-4 container mx-auto m-0 my-5">
-            <div class="container p-4">
-                <div class="row d-flex">
-                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                        <h5 class="text-white">Puedes contactarme en: </h5>
-                        <div class="d-flex flex-row gap-3 mt-3">
-                            <i class="fab fa-linkedin mb-3 display-6 text-secondary"></i>
-                            <i class="fab fa-github mb-3 display-6 text-secondary"></i>
+                        <div class="modal-body">
+                            <p class="text-muted">
+                                Este ciclo te permitirá instalar y mantener servicios de redes, equipos y sistemas
+                                informáticos en entornos monousuario y multiusuario y servicios de Internet.
+                                Elaborar páginas web dinámicas, utilizando las herramientas más avanzadas en diseño Web.
+                                Mantenimiento de servicios de internet: servidor web, correo, proxys...
+                                Dar soporte al usuario resolviendo los problemas que se presentan en la explotación del
+                                servicio de red, del sistema informático y de las aplicaciones ofimáticas, siguiendo
+                                protocolos de actuación establecidos.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                        <h5 class="text-white">Enlaces</h5>
-                        <ul class="list-unstyled mb-0 text-secondary">
-                            <li>
-                                <a href="#inicio" class="text-decoration-none text-secondary">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="#habilidades" class="text-decoration-none text-secondary">Habilidades</a>
-                            </li>
-                            <li>
-                                <a href="#proyectos" class="text-decoration-none text-secondary">Proyectos</a>
-                            </li>
-                            <li>
-                                <a href="#experiencia" class="text-decoration-none text-secondary">Experiencia</a>
-                            </li>
-                            <li>
-                                <a href="#formacion" class="text-decoration-none text-secondary">Formacion</a>
-                            </li>
-                            <li>
-                                <a href="#contacto" class="text-decoration-none text-secondary">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                        <h5 class="text-white">Enlaces</h5>
-                        <ul class="list-unstyled mb-0 text-secondary">
-                            <li>
-                                <a href="#inicio" class="text-decoration-none text-secondary">Inicio</a>
-                            </li>
-                            <li>
-                                <a href="#habilidades" class="text-decoration-none text-secondary">Habilidades</a>
-                            </li>
-                            <li>
-                                <a href="#proyectos" class="text-decoration-none text-secondary">Proyectos</a>
-                            </li>
-                            <li>
-                                <a href="#experiencia" class="text-decoration-none text-secondary">Experiencia</a>
-                            </li>
-                            <li>
-                                <a href="#formacion" class="text-decoration-none text-secondary">Formacion</a>
-                            </li>
-                            <li>
-                                <a href="#contacto" class="text-decoration-none text-secondary">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                        <a href="https://github.com/E7OY" target="_blank">
-                            <div id="github-activity"></div>
-                        </a>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalLiceoLaPaz2" tabindex="-1" aria-labelledby="modalLiceoLaPaz2Label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLiceoLaPaz2Label">Liceo La Paz - Desarrollo de Aplicaciones
+                                Web
+                                (2000hr)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-muted">
+                                Este Ciclo te permitirá desarrollar, implantar y mantener aplicaciones web. Configurar y
+                                explotar sistemas informáticos. Aplicar técnicas y procedimientos relacionados con la
+                                seguridad en sistemas. Gestionar servidores de aplicaciones. Gestionar bases de datos.
+                                Desarrollar componentes multimedia para su integración en aplicaciones web. Desarrollar
+                                e
+                                integrar componentes software en el entorno del servidor web.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        
-            <div class="text-center p-3 m-3 text-white">
-                © 2025 Copyright:
-                <a class="text-secondary" href="https://e7oy.github.io/">e7oy.github.io</a>
-            </div>
-        </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
-        <script src="../scripts/portfolio.js"></script>
+            <div class="modal fade" id="modalUdemy1" tabindex="-1" aria-labelledby="modalUdemy1Label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalUdemy1Label">Udemy - Curso Profesional de Desarrollo Web
+                                (42hr)
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-muted">
+                                Introducción a Figma: Creación de bocetos de sitios web. Fundamentos del Diseño Web:
+                                Construcción de la primera página web con HTML y CSS. Diseño Web Adaptable: Creación de
+                                páginas responsivas para dispositivos móviles. Programación en JavaScript:
+                                Implementación de
+                                lógica y interactividad en las páginas web. jQuery: Adición de efectos y animaciones a
+                                las
+                                páginas web. Bootstrap 5: Utilización del framework para diseño web responsive rápido y
+                                sencillo. WordPress: Gestión de contenidos, desde la instalación hasta la creación de un
+                                blog real. Control de Versiones con Git y GitHub: Compartición y gestión del código.
+                                Publicación de Sitios Web: Proceso de subir páginas web a Internet.
+                            </p>
+                            <img src="../img/certificadoudemy1.png" class="img-fluid img-thumbnail mt-2"
+                                alt="certificado udemy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalUdemy2" tabindex="-1" aria-labelledby="modalUdemy2Label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalUdemy2Label">Udemy - Máster en Java (54hr)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-muted">
+                                Bases de Java: Desde variables hasta estructuras de control. Programación Orientada a
+                                Objetos: Clases, métodos, herencia, polimorfismo. Aprobar Exámenes y Conseguir Empleo:
+                                Preparación para certificaciones y entrevistas. Bases de Datos: Manejo de bases de datos
+                                con
+                                JDBC. Programación Funcional: Uso de expresiones Lambda y Stream API. Programación
+                                Multihilo. Manejo de Excepciones y Colecciones. Interfaces Gráficas: Creación de GUIs
+                                con
+                                SWING. Comunicación entre Objetos en Java.
+                            </p>
+                            <img src="../img/certificadoudemy1.png" class="img-fluid img-thumbnail mt-2"
+                                alt="certificado udemy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalGoogle1" tabindex="-1" aria-labelledby="modalGoogle1Label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalGoogle1Label">Google - Curso de Introducción al Desarrollo
+                                Web:
+                                HTML y CSS (1/2) (40hr)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-muted">
+                                Historia de la Web: Exploré cómo nació y evolucionó la Web hasta convertirse en lo que
+                                es
+                                hoy. Funcionamiento de la Web: Comprendí los principios básicos de cómo funciona la Web,
+                                incluyendo protocolos como HTTP y HTTPS. Creación de páginas web: Aprendí a escribir y
+                                estructurar correctamente páginas web utilizando HTML5. Publicación de sitios web:
+                                Conocí
+                                los pasos necesarios para alojar y publicar sitios web en servidores. Buenas prácticas
+                                en
+                                estructuración web: Me familiaricé con las mejores prácticas para estructurar contenido
+                                y
+                                aplicar estilos CSS para mejorar la apariencia visual de las páginas.
+                            </p>
+                            <img src="../img/certificadogoogle1.png" class="img-fluid img-thumbnail mt-2"
+                                alt="certificado google">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalGoogle2" tabindex="-1" aria-labelledby="modalGoogle2Label"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalGoogle2Label">Google - Curso de Introducción al Desarrollo
+                                Web:
+                                HTML y CSS (2/2) (40hr)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-muted">
+                                Definición de la presentación de una página web: Aprendí a aplicar estilos CSS para
+                                definir
+                                la apariencia visual de páginas web. Definición de la presentación de los elementos de
+                                una
+                                página web: Me familiaricé con la estilización individual de componentes web utilizando
+                                CSS.
+                                Maquetación de una página web: Adquirí conocimientos sobre cómo estructurar y organizar
+                                el
+                                contenido de una página web de manera profesional utilizando técnicas de diseño y
+                                maquetación con CSS. Logro del éxito de una página web: Entendí los factores clave para
+                                crear páginas web exitosas, incluyendo la usabilidad, accesibilidad y rendimiento.
+                            </p>
+                            <img src="../img/certificadogoogle2.png" class="img-fluid img-thumbnail mt-2"
+                                alt="certificado google">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="contacto" class="container text-center rounded-4 bg-body-secondary my-5 p-5">
+                <button class="btn rounded-5 btn-secondary">Contacto</button>
+                <div class="row d-flex flex-row align-items-center justify-content-center mt-5">
+                    <div class="col-12 col-md-6 text-start mb-4 mb-md-0">
+                        <h2 class="text-white">Contacto</h2>
+                        <p>Escríbeme a <a href="mailto:e.garcia@liceolapaz.net"
+                                class="text-secondary">e.garcia@liceolapaz.net</a> o
+                            encuéntrame en <a href="https://www.linkedin.com/in/eloygarciamartinez/"
+                                class="text-secondary">Linkedin</a>. Estoy
+                            listo para colaborar contigo!</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <form action="mailto:e.garcia@liceolapaz.net" class="d-flex gap-2 flex-column">
+                            <div class="form-group">
+                                <input type="text" placeholder="Nombre y apellidos"
+                                    class="form-control rounded-0 p-3 w-100" id="nombre">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" class="form-control rounded-0 p-3 w-100"
+                                >
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Enviar" class="form-control rounded-0 p-3 w-50" id="email">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="border-2 border text-black text-start rounded-4 p-4 container mx-auto m-0 my-5">
+        <div class="container p-4">
+            <div class="row d-flex">
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="text-white">Puedes contactarme en: </h5>
+                    <div class="d-flex flex-row gap-3 mt-3">
+                        <i class="fab fa-linkedin mb-3 display-6 text-secondary"></i>
+                        <i class="fab fa-github mb-3 display-6 text-secondary"></i>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="text-white">Enlaces</h5>
+                    <ul class="list-unstyled mb-0 text-secondary">
+                        <li>
+                            <a href="#inicio" class="text-decoration-none text-secondary">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#habilidades" class="text-decoration-none text-secondary">Habilidades</a>
+                        </li>
+                        <li>
+                            <a href="#proyectos" class="text-decoration-none text-secondary">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#experiencia" class="text-decoration-none text-secondary">Experiencia</a>
+                        </li>
+                        <li>
+                            <a href="#formacion" class="text-decoration-none text-secondary">Formacion</a>
+                        </li>
+                        <li>
+                            <a href="#contacto" class="text-decoration-none text-secondary">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <h5 class="text-white">Enlaces</h5>
+                    <ul class="list-unstyled mb-0 text-secondary">
+                        <li>
+                            <a href="#inicio" class="text-decoration-none text-secondary">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#habilidades" class="text-decoration-none text-secondary">Habilidades</a>
+                        </li>
+                        <li>
+                            <a href="#proyectos" class="text-decoration-none text-secondary">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="#experiencia" class="text-decoration-none text-secondary">Experiencia</a>
+                        </li>
+                        <li>
+                            <a href="#formacion" class="text-decoration-none text-secondary">Formacion</a>
+                        </li>
+                        <li>
+                            <a href="#contacto" class="text-decoration-none text-secondary">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <a href="https://github.com/E7OY" target="_blank">
+                        <div id="github-activity"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3 m-3 text-white">
+            © 2025 Copyright:
+            <a class="text-secondary" href="https://e7oy.github.io/">e7oy.github.io</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/portfolio.js"></script>
 
 </body>
+
 </html>

@@ -12,115 +12,121 @@
 </head>
 
 <body class="m-0 mx-auto">
-
-
-    <nav class="navbar navbar-expand-lg w-50 p-4 text-center mx-auto mt-2">
-        <div class="container-fluid">
-            <button class="navbar-toggler mb-4 mx-auto" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                <ul class="navbar-nav d-flex gap-1">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html#inicio">Sobre mi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#habilidades">Habilidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#proyectos">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#experiencia">Experiencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#formacion">Formacion</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contacto">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="../img/cv.pdf" class="btn btn-secondary"
-                            download="Eloy_Garcia_Martinez_CV.pdf">Descargar CV</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg w-50 p-4 text-center mx-auto mt-2">
+            <div class="container-fluid">
+                <button class="navbar-toggler mb-4 mx-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav d-flex gap-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html#inicio">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#habilidades">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#experiencia">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#formacion">Formacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../img/cv.pdf" class="btn btn-secondary"
+                                download="Eloy_Garcia_Martinez_CV.pdf">Descargar CV</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
+    <main>
+        <section class="inicio">
+            <div id="inicio" class="container">
+                <div class="container mt-3 text-center">
+                    <button class="btn btn-secondary" onclick="history.back()">Volver</button>
+                    <span class="btn btn-light"><a href="https://memoramajs.vercel.app/"
+                        class="text-decoration-none text-secondary">Visitar</a></span>
 
-    <div id="inicio" class="container">
-        <div class="container mt-3 text-center">
-            <button class="btn btn-secondary" onclick="history.back()">Volver</button>
-            <button class="btn btn-light"><a href="https://memoramajs.vercel.app/"
-                    class="text-decoration-none text-secondary">Visitar</a></button>
-
-        </div>
-        <div class="row text-center d-flex justify-content-center align-items-center mt-5">
-            <h3 class="card-title text-center fw-semibold">Memorama</h3>
-            <p class="card-text text-center w-75 mt-2">Este proyecto es un juego de memoria que consta de un tablero con
-                dificultad personalizable y unas cartas hecho con JS</p>
-            <div class="w-100 mb-5 d-flex justify-content-center">
-                <a class="card-link text-center text-secondary" href="https://memoramajs.vercel.app/">Enlace</a>
+                </div>
+                <div class="row text-center d-flex justify-content-center align-items-center mt-5">
+                    <h3 class="card-title text-center fw-semibold">Memorama</h3>
+                    <p class="card-text text-center w-75 mt-2">Este proyecto es un juego de memoria que consta de un
+                        tablero con
+                        dificultad personalizable y unas cartas hecho con JS</p>
+                    <div class="w-100 mb-5 d-flex justify-content-center">
+                        <a class="card-link text-center text-secondary" href="https://memoramajs.vercel.app/">Enlace</a>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <h4 class="card-title text-center">Herramientas</h4>
+                    <div class="col-12 col-md-6 text-center d-flex justify-content-evenly mt-2">
+                        <i class="fab fa-html5 icon-html fa-4x mb-2" data-bs-toggle="tooltip" title="HTML5"></i>
+                        <i class="fab fa-css3 icon-css fa-4x mb-2" data-bs-toggle="tooltip" title="CSS3"></i>
+                        <i class="fab fa-js icon-js fa-4x mb-2" data-bs-toggle="tooltip" title="JavaScript"></i>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <h4 class="card-title text-center">Herramientas</h4>
-            <div class="col-12 col-md-6 text-center d-flex justify-content-evenly mt-2">
-                <i class="fab fa-html5 icon-html fa-4x mb-2" data-bs-toggle="tooltip" title="HTML5"></i>
-                <i class="fab fa-css3 icon-css fa-4x mb-2" data-bs-toggle="tooltip" title="CSS3"></i>
-                <i class="fab fa-js icon-js fa-4x mb-2" data-bs-toggle="tooltip" title="JavaScript"></i>
+
+            <div class="row justify-content-center mt-5">
+                <h4 class="card-title text-center">Objetivos del Proyecto</h4>
+                <table class="table table-bordered w-75 mt-2 table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Objetivo</th>
+                            <th scope="col">Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Desarrollo de Juego</td>
+                            <td>Crear un juego de memoria interactivo utilizando JavaScript para mejorar las habilidades
+                                de
+                                programación y lógica.</td>
+                        </tr>
+                        <tr>
+                            <td>Interfaz de Usuario Atractiva</td>
+                            <td>Diseñar una interfaz de usuario atractiva y fácil de usar utilizando HTML y CSS.</td>
+                        </tr>
+                        <tr>
+                            <td>Accesibilidad</td>
+                            <td>Asegurar que el juego sea accesible y fácil de jugar para todos los usuarios, incluyendo
+                                aquellos con discapacidades.</td>
+                        </tr>
+                        <tr>
+                            <td>Responsive Design</td>
+                            <td>Implementar un diseño responsive que se adapte a diferentes tamaños de pantalla y
+                                dispositivos,
+                                permitiendo jugar en móviles y tablets.</td>
+                        </tr>
+                        <tr>
+                            <td>Optimización del Rendimiento</td>
+                            <td>Optimizar el rendimiento del juego para asegurar una experiencia de usuario fluida y sin
+                                retrasos.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
-    </div>
 
-    <div class="row justify-content-center mt-5">
-        <h4 class="card-title text-center">Objetivos del Proyecto</h4>
-        <table class="table table-bordered w-75 mt-2 table-striped table-hover">
-            <thead class="table-dark">
-                <tr>
-                    <th scope="col">Objetivo</th>
-                    <th scope="col">Descripción</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Desarrollo de Juego</td>
-                    <td>Crear un juego de memoria interactivo utilizando JavaScript para mejorar las habilidades de
-                        programación y lógica.</td>
-                </tr>
-                <tr>
-                    <td>Interfaz de Usuario Atractiva</td>
-                    <td>Diseñar una interfaz de usuario atractiva y fácil de usar utilizando HTML y CSS.</td>
-                </tr>
-                <tr>
-                    <td>Accesibilidad</td>
-                    <td>Asegurar que el juego sea accesible y fácil de jugar para todos los usuarios, incluyendo
-                        aquellos con discapacidades.</td>
-                </tr>
-                <tr>
-                    <td>Responsive Design</td>
-                    <td>Implementar un diseño responsive que se adapte a diferentes tamaños de pantalla y dispositivos,
-                        permitiendo jugar en móviles y tablets.</td>
-                </tr>
-                <tr>
-                    <td>Optimización del Rendimiento</td>
-                    <td>Optimizar el rendimiento del juego para asegurar una experiencia de usuario fluida y sin
-                        retrasos.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div id="foto" class="row d-flex my-5 m-0 mx-auto w-100">
-        <div class="row text-center">
-            <h4 class="card-title text-center">Previsualización</h4>
-            <img src="../img/memoramadesktop.png" class="rounded-1 shadow-lg mt-2 border-dark w-75 mx-auto d-block"
-                alt="Memorama desktop">
-        </div>
-    </div>
+            <div id="foto" class="row d-flex my-5 m-0 mx-auto w-100">
+                <div class="row text-center">
+                    <h4 class="card-title text-center">Previsualización</h4>
+                    <img src="../img/memoramadesktop.png"
+                        class="rounded-1 shadow-lg mt-2 border-dark w-75 mx-auto d-block" alt="Memorama desktop">
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="border-2 border text-black text-start rounded-4 p-4 w-100 container mx-auto m-0 my-5">
         <div class="container p-4">
