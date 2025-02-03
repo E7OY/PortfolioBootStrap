@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Roboto;
+}
+
 .icon-html {
     color: #e34c26;
 }
@@ -119,4 +125,3 @@ body {
 .day.level-4 {
     background-color: #39D353;
 }
-
