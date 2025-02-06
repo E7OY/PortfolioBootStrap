@@ -1,6 +1,6 @@
 async function fetchCommitActivity() {
     const username = 'E7OY';
-    const token = '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';
+    const token = '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';
     const commitsContainer = document.getElementById('github-activity');
     const commitCounts = {};
     const currentDate = new Date();
@@ -8,7 +8,6 @@ async function fetchCommitActivity() {
     threeMonthsAgoDate.setMonth(currentDate.getMonth() - 1);
     let page = 1;
     let hasMoreEvents = true;
-
 
     const userInfoResponse = await fetch(`https://api.github.com/users/${username}`, {
         headers: {
@@ -73,29 +72,3 @@ async function fetchCommitActivity() {
 }
 
 fetchCommitActivity();
-
-
-
-
-
-
-function myFunc() {
-    var now = new Date();
-    var time = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
-    document.getElementById('display-time').innerHTML = time;
-}
-setInterval(myFunc, 1000);
-
-const apiKey = 'fbc85170dc7995a303c1d3f3a45cd83a';
-const ciudad = 'Corunha';
-const url = `https://api.openweathermap.org/data/2.5/weather?q=Corunha&appid=fbc85170dc7995a303c1d3f3a45cd83a&units=metric&lang=es`;
-fetch(url)
-    .then(response => response.json())
-    .then(data => {
-        const tempDiv = document.getElementById('temp');
-        const temperatura = Math.round(data.main.temp);
-        const descripcion = data.weather[0].description;
-        tempDiv.innerHTML = `${descripcion}<span>, </span>${temperatura}°C`;
-    })
-    .catch(error => console.log('Error:', error));
-
