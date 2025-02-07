@@ -1,6 +1,6 @@
 async function fetchCommitActivity() {
     const username = 'E7OY';
-    const token = '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';
+    const token = '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';
     const commitsContainer = document.getElementById('github-activity');
     const commitCounts = {};
     const currentDate = new Date();
