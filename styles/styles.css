@@ -5,7 +5,6 @@
 }
 
 body {
-    background-color: #050E18;
 }
 
 .icon-html {
@@ -129,3 +128,8 @@ body {
 .day.level-4 {
     background-color: #39D353;
 }
+
+.proyect-img:hover {
+    transform: scale(1.1) rotate(-2deg);
+     transition: 1s;
+ }

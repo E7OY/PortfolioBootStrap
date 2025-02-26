@@ -13,15 +13,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    .bg-custom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+        height: 420vh;
+        width: 100vw;
+        background-color: #0e0e0e;
+        background-image: radial-gradient(ellipse 60% 60% at 50% -30%, rgba(120, 119, 198, 0.3), rgba(0, 0, 0, 0));
+    }
+</style>
 </head>
 
 <body class="m-0 mx-auto">
-
+    <div class="bg-custom"></div>
 
     <header>
-        <!--aplicamos estilos de barra de navegacion de bootstrap, hacemos que sea expandible en pantallas grandes
-        y en pequeñas aparazca un boton, establecemos un ancho del 50%, un padding, texto alineado al centro y un margen
-        auto en el eje horizontal y un margen por arriba-->
         <nav class="navbar navbar-expand-lg w-50 p-4 text-center mx-auto mt-2">
             <div class="container-fluid">
                 <button class="navbar-toggler mb-4 mx-auto" type="button" data-bs-toggle="collapse"
@@ -29,29 +38,27 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- creamos contenedor que pueda colapsarse, le indicamos que esto es parte de la barra de navegación
-                que se colapsa y alineamos horizontalmente al centro -->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                    <ul class="navbar-nav d-flex gap-1">
+                    <ul class="navbar-nav d-flex gap-1 text-white">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#inicio">Sobre mi</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#inicio">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                            <a class="nav-link text-white" href="#habilidades">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                            <a class="nav-link text-white" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#experiencia">Experiencia</a>
+                            <a class="nav-link text-white" href="#experiencia">Experiencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#formacion">Formacion</a>
+                            <a class="nav-link text-white" href="#formacion">Formacion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
+                            <a class="nav-link text-white" href="#contacto">Contacto</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a href="../img/cv.pdf" class="btn btn-secondary"
                                 download="Eloy_Garcia_Martinez_CV.pdf">Descargar CV</a>
                         </li>
@@ -64,42 +71,30 @@
     <main>
 
         <section class="inicio">
-            <!-- aplicamos estilos de container de bootstrap, un ancho del 75%, un margen en eje horizontal de auto
-            y un padding vertical -->
             <div id="inicio" class="container w-100 mx-auto py-5">
-                <!-- aplicamos estilos de fila de bootstrap, hacemos flexible el contenedor, y verticalmente 
-                alineamos al centro, horizontalmente separamos el contenido aplicando espacios alrededor de los elementos  -->
                 <div class="row d-flex justify-content-around align-items-center">
-                    <!-- hacemos que la columna ocupe el 100% en pantallas pequeñas y el 50% en pantallas medianas -->
                     <div class="col-12 col-md-6">
-                        <!-- texto en negrita -->
-                        <h1 class="fw-bolder">Eloy García Martínez</h1>
-                        <p class="text-secondary">¡Hola! Soy Eloy García, programador web y actual estudiante del ciclo
+                        <h1 class="fw-bolder text-white">Eloy García Martínez</h1>
+                        <p class="text-white-50">¡Hola! Soy Eloy García, programador web y actual estudiante del ciclo
                             superior de
                             DAW (Desarrollo de Aplicaciones Web). Me gusta estar en continuo aprendizaje y ayudar a
                             empresas y emprendedores a tener un hueco en el mundo de Internet.
                         </p>
-                        <!-- contenedor flexible con alineación vertical al centro y color de texto secundario -->
                         <div class="info d-flex align-items-center text-secondary">
                             <i class="fas fa-map-marker-alt me-2"></i>
-                            <span class="">A Coruña, &nbsp;</span><span class="" id="display-time"></span><span id="temp"
-                                class="text-secondary"></span>
+                            <span class="text-white-50">A Coruña, &nbsp;</span><span class="text-white-50" id="display-time"></span><span id="temp"
+                                class="text-white-50"></span>
                         </div>
-                        <!-- contenedor flexible con alineación vertical al centro y color de texto secundario -->
                         <div class="info d-flex flex-row align-items-center text-secondary">
                             <i class="fas fa-book me-2"></i>
-                            <span>Estudiante en <a class="text-secondary" href="https://liceolapaz.com">Liceo La
+                            <span class="text-white-50">Estudiante en <a class="text-white-50" href="https://liceolapaz.com">Liceo La
                                     Paz</a></span>
                         </div>
-                        <!-- contenedor flexible con alineación vertical al centro, margen superior y color de texto secundario -->
                         <div class="info d-flex flex-row align-items-center mt-3 text-secondary">
                             <i class="fab fa-linkedin me-3"></i>
                             <i class="fab fa-github me-3"></i>
                         </div>
                     </div>
-                    <!-- hacemos que la columna ocupe el 100% en pantallas pequeñas y el 25% en pantallas medianas, 
-                    aplicamos un margen superior en pantallas pequeñas y eliminamos el margen en pantallas medianas, 
-                    centramos el texto y aplicamos estilos de imagen -->
                     <div class="col-12 col-md-3 mt-4 mt-md-0 text-center">
                         <img src="../img/imgeloy.webp" class="img-fluid shadow-lg w-75 rounded-circle" alt="img eloy">
                     </div>
@@ -169,9 +164,8 @@
             </div>
         </section>
 
+
         <section class="proyectos">
-            <!-- aplicamos estilos de container de bootstrap, texto centrado, bordes redondeados, 
-            margen vertical y padding vertical -->
             <div id="proyectos" class="container w-75 text-center rounded-4 my-5 py-5">
                 <div class="gap-3 d-flex flex-row justify-content-start align-items-center">
                     <img src="../img/proyects_icon.png" width="30" alt="icono proyectos">
@@ -181,11 +175,13 @@
                 <div class="row w-50 mt-5 d-flex align-items-center justify-content-center flex-row w-auto gap-4">
 
                     <div class="col-12 w-75 text-start d-flex justify-content-center flex-row align-items-center gap-5">
-                        <img src="../img/sneakvault_desktop.png" width="400" class="img-fluid border border-1 border-white-50 rounded-2"
+                        <img src="../img/sneakvault_desktop.png" width="400" class="img-fluid proyect-img border border-1 border-white-50 rounded-2"
                         alt="sneakvault desktop">
 
                         <div class="d-flex flex-column justify-content-start gap-3">
-                            <h2 class="text-white fw-bold m-0 p-0 text-start">SneakVault E-Commerce</h2>
+                            <h2 class="text-white fw-bold m-0 p-0 text-start">
+                            <a href="https://github.com/E7OY?tab=repositories" class="text-decoration-none text-white">SneakVault E-Commerce</a></h2>
+
                             
                             <div class="w-auto gap-2 d-flex flex-row align-items-center justify-content-start">
                                 <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
@@ -208,11 +204,13 @@
 
                     <div class="col-12 w-75 text-start d-flex justify-content-center flex-row align-items-center gap-5">
 
-                        <img src="../img/memorama_desktop.png" width="400" class="img-fluid border border-1 border-white-50 rounded-2"
+                        <img src="../img/memorama_desktop.png" width="400" class="img-fluid proyect-img border border-1 border-white-50 rounded-2"
                         alt="sneakvault desktop">
 
                         <div class="d-flex flex-column justify-content-start gap-3">
-                            <h2 class="text-white fw-bold m-0 p-0 text-start">Memorama</h2>
+                            <h2 class="text-white fw-bold m-0 p-0 text-start">
+                             <a href="https://memoramajs.vercel.app/" class="text-decoration-none text-white">Memorama</a>
+                            </h2>
                             
                             <div class="w-auto gap-2 d-flex flex-row align-items-center justify-content-start">
                                 <span style="background-color: #ffffff0d;"  class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
@@ -236,11 +234,13 @@
 
                     <div class="col-12 w-75 text-start d-flex justify-content-center flex-row align-items-center gap-5">
 
-                        <img src="../img/sneakvault_desktop.png" width="400" class="img-fluid border border-1 border-white-50 rounded-2"
+                        <img src="../img/portfolio.desktop.png" width="400" class="img-fluid proyect-img border border-1 border-white-50 rounded-2"
                         alt="sneakvault desktop">
 
                         <div class="d-flex flex-column justify-content-start gap-3">
-                            <h2 class="text-white fw-bold m-0 p-0 text-start">Portfolio</h2>
+                            <h2 class="text-white fw-bold m-0 p-0 text-start">
+                                <a href="https://e7oy.github.io/" class="text-decoration-none text-white">Portfolio</a>
+                            </h2>
                             
                             <div class="w-auto gap-2 d-flex flex-row align-items-center justify-content-start">
                                 <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
@@ -261,30 +261,26 @@
                         </div>
                     </div>
 
-
-
-                 
-    
                         <a href="https://github.com/E7OY?tab=repositories" class="text-decoration-none" target="_blank">Ver
                             más proyectos en GitHub > </a>
                     </div>
                 </div>
             </section>
 
-        <section class="experiencia">
-            <!-- aplicamos estilos de container de bootstrap, texto centrado, bordes redondeados, fondo secundario, 
-            margen vertical y padding vertical -->
-            <div id="experiencia" class="container text-center rounded-4 bg-body-secondary my-5 py-5">
-                <button class="btn rounded-5 btn-secondary">Experiencia</button>
-                <!-- aplicamos estilos de fila de bootstrap, hacemos flexible el contenedor, alineamos verticalmente 
-                al centro y horizontalmente distribuimos el contenido de manera uniforme, aplicamos padding -->
+
+        <section class="proyectos">
+            <div id="proyectos" class="container w-75 text-center rounded-4 my-5 py-5">
+                <div class="gap-3 d-flex flex-row justify-content-start align-items-center">
+                    <img src="../img/proyects_icon.png" width="30" alt="icono proyectos">
+                    <h2 class="text-start text-white float-start fw-bold m-0 p-0">Experiencia</h2>
+                    <hr class="text-white bg-white h-5 w-100">
+                </div>
                 <div class="row d-flex justify-content-evenly align-items-center p-4">
                     <div class="col-12 text-center">
                         <h4 class="fw-light">Estas han sido mis últimas experiencias laborales.</h4>
                     </div>
                 </div>
-                <!-- aplicamos estilos de tarjeta de bootstrap, sombra, bordes redondeados, margen y padding -->
-                <div class="card shadow rounded border w-75 mx-auto m-0 p-5">
+                <div class="  shadow rounded border w-75 mx-auto m-0 p-5">
                     <div class="row d-flex align-items-center justify-content-center">
                         <div class="col-12 col-md-4 text-start mb-4 mb-md-0">
                             <img src="../img/serviceboxlogo.webp" class="img-fluid w-75" alt="logo servicebox">
@@ -311,48 +307,50 @@
         </section>
 
         <section class="formacion">
-            <!-- aplicamos estilos de container de bootstrap, texto centrado, bordes redondeados, 
-            margen vertical y padding vertical -->
-            <div id="formacion" class="container text-center rounded-4 my-5 py-5">
-                <button class="btn rounded-5 btn-secondary">Formación</button>
+            <div id="formacion" class="container w-75 text-center rounded-4 my-5 py-5">
+                <div class="gap-3 d-flex flex-row justify-content-start align-items-center">
+                    <img src="../img/proyects_icon.png" width="30" alt="icono proyectos">
+                    <h2 class="text-start text-white float-start fw-bold m-0 p-0">Formacion</h2>
+                    <hr class="text-white bg-white h-5 w-100">
+                </div>
                 <div class="row d-flex align-items-stretch flex-row justify-content-center mt-5 gap-1 mb-1">
-                    <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex justify-content-center align-content-center flex-column gap-3" data-bs-toggle="modal"
+                    <div class="col-12 col-md-6 col-lg-3 text-start rounded border m-0 p-5 d-flex justify-content-center align-content-center flex-column gap-3" data-bs-toggle="modal"
                         data-bs-target="#modalLiceoLaPaz1">
                         <img src="../img/logoliceolapaz.webp" class="img-fluid bg-white p-3 rounded-3" width="150" alt="">
-                        <h5 class="text-white fw-light">Sistemas Microinformáticos y Redes (2000hr)</h5>
+                        <h5 class="text-white fw-semibold">Sistemas Microinformáticos y Redes (2000hr)</h5>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex justify-content-center align-content-center flex-column gap-3" data-bs-toggle="modal"
+                    <div class="col-12 col-md-6 col-lg-3 text-start rounded border m-0 p-5 d-flex justify-content-center align-content-center flex-column gap-3" data-bs-toggle="modal"
                         data-bs-target="#modalLiceoLaPaz2">
                         <img src="../img/logoliceolapaz.webp" class="img-fluid bg-white p-3 rounded-3"  width="150" alt="">
-                        <h5 class="fw-light text-white">Desarrollo de Aplicaciones Web (2000hr)</h5>
+                        <h5 class="fw-semibold text-white">Desarrollo de Aplicaciones Web (2000hr)</h5>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex flex-column align-content-center gap-3" data-bs-toggle="modal"
+                    <div class="col-12 col-md-6 col-lg-3 text-start rounded border m-0 p-5 d-flex flex-column align-content-center gap-3" data-bs-toggle="modal"
                         data-bs-target="#modalUdemy1">
                         <img src="../img/logoudemy.webp" class="img-fluid bg-white p-3 rounded-3"  width="150" alt="">
-                        <h5 class="fw-light text-white">Curso Profesional de Desarrollo Web: Html, Css, Sass, Bootstrap, Js, Jquery,
+                        <h5 class="fw-semibold text-white">Curso Profesional de Desarrollo Web: Html, Css, Sass, Bootstrap, Js, Jquery,
                             Wordpress y Figma (42hr)</h5>
                     </div>
                 </div>
                 <div class="row d-flex align-items-stretch flex-row justify-content-center gap-1">
-                    <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex align-content-center flex-column gap-3" data-bs-toggle="modal"
+                    <div class="col-12 col-md-6 col-lg-3 text-start rounded border m-0 p-5 d-flex align-content-center flex-column gap-3" data-bs-toggle="modal"
                         data-bs-target="#modalUdemy2">
                         <img src="../img/logoudemy.webp" class="img-fluid bg-white p-3 rounded-3"  width="150" alt="">
-                        <h5 class="fw-light text-white">Máster en Java , 0 a experto, Universidad, GS, DAM, DAW (54hr)</h5>
+                        <h5 class="fw-semibold text-white">Máster en Java , 0 a experto, Universidad, GS, DAM, DAW (54hr)</h5>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex flex-column align-content-center gap-3" data-bs-toggle="modal"
+                    <div class="col-12 col-md-6 col-lg-3 text-start rounded border m-0 p-5 d-flex flex-column align-content-center gap-3" data-bs-toggle="modal"
                         data-bs-target="#modalGoogle1">
                         <img src="../img/logogoogle.webp" class="img-fluid bg-white p-3 rounded-3"  width="150" alt="">
-                        <h5 class="fw-light text-white">Curso de Introducción al Desarrollo Web: HTML y CSS (1/2) (40hr)</h5>
+                        <h5 class="fw-semibold text-white">Curso de Introducción al Desarrollo Web: HTML y CSS (1/2) (40hr)</h5>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-3 text-start card bg-body-secondary rounded border m-0 p-5 d-flex flex-column align-content-center gap-3" data-bs-toggle="modal"
+                    <div class="col-12 col-md-6 col-lg-3 text-start rounded border m-0 p-5 d-flex flex-column align-content-center gap-3" data-bs-toggle="modal"
                         data-bs-target="#modalGoogle2">
                         <img src="../img/logogoogle.webp" class="img-fluid bg-white p-3 rounded-3"  width="150" alt="">
-                        <h5 class="fw-light text-white">Curso de Introducción al Desarrollo Web: HTML y CSS (2/2) (40hr)</h5>
+                        <h5 class="fw-semibold text-white">Curso de Introducción al Desarrollo Web: HTML y CSS (2/2) (40hr)</h5>
                     </div>
                 </div>
             </div>
 
-            <!-- modales de formación -->
+
             <div class="modal fade" id="modalLiceoLaPaz1" tabindex="-1" aria-labelledby="modalLiceoLaPaz1Label"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -520,13 +518,17 @@
                 </div>
             </div>
 
-            
-            <div id="contacto" class="container text-center rounded-4 bg-body-secondary my-5 p-5">
-                <button class="btn rounded-5 btn-secondary">Contacto</button>
+            <section class="contacto">
+                <div id="proyectos" class="container w-75 text-center rounded-4 my-5 py-5">
+                    <div class="gap-3 d-flex flex-row justify-content-start align-items-center">
+                        <img src="../img/proyects_icon.png" width="30" alt="icono proyectos">
+                        <h2 class="text-start text-white float-start fw-bold m-0 p-0">Contacto</h2>
+                        <hr class="text-white bg-white h-5 w-100">
+                    </div>
                 <div class="row d-flex flex-row align-items-center justify-content-center mt-5">
                     <div class="col-12 col-md-6 text-start mb-4 mb-md-0">
                         <h2 class="text-white">Contacto</h2>
-                        <p>Escríbeme a <a href="mailto:e.garcia@liceolapaz.net"
+                        <p style="max-width: 50ch;">Escríbeme a <a href="mailto:e.garcia@liceolapaz.net"
                                 class="text-secondary">e.garcia@liceolapaz.net</a> o
                             encuéntrame en <a href="https://www.linkedin.com/in/eloygarciamartinez/"
                                 class="text-secondary">Linkedin</a>. Estoy
@@ -536,16 +538,16 @@
                         <form action="mailto:e.garcia@liceolapaz.net" class="d-flex gap-2 flex-column">
                             <div class="form-group">
                                 <input type="text" placeholder="Nombre y apellidos"
-                                    class="form-control rounded-0 p-3 w-100" id="nombre">
+                                    class="form-control bg-transparent rounded-0 p-3 w-100" id="nombre">
                             </div>
                             <div class="form-group">
-                                <input type="email" placeholder="Email" class="form-control rounded-0 p-3 w-100">
+                                <input type="email" placeholder="Email" class="form-control bg-transparent  rounded-0 p-3 w-100">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control rounded-0 p-3 w-100" placeholder="Mensaje" name="mensaje" id="mensaje"></textarea>
+                                <textarea class="form-control bg-transparent  rounded-0 p-3 w-100" placeholder="Mensaje" name="mensaje" id="mensaje"></textarea>
                             </div>                            
                             <div class="form-group d-flex">
-                                <input type="submit" value="Enviar" class="form-control  rounded-0 p-3 w-50 btn btn-secondary" id="email">
+                                <input type="submit" value="Enviar" class="form-control  bg-white-50 rounded-0 p-3 w-50 btn btn-secondary" id="email">
                             </div>
                         </form>
                     </div>
@@ -555,9 +557,7 @@
 
     </main>
 
-    <!-- aplicamos borde al footer, color de texto negro, texto alineado al comienzo, bordes redondeados
-    padding a todos lados, aplicamos estilos por defecto de bootstrap de contenedor, margenes eje x auto y margen
-    eje horizontal 5 -->
+
     <footer class="border-2 border text-black text-start rounded-4 p-4 container mx-auto m-0 my-5">
         <div class="container p-4">
             <div class="row d-flex justify-content-around">
@@ -568,14 +568,11 @@
                         <i class="fab fa-github mb-3 display-6 text-secondary"></i>
                     </div>
                 </div>
-                <!-- para que la columna ocupe el 100% en pantallas pequeñas, el 50% en medianas, el 25% en pantallas grandes,
-                margen abajo y eliminamos el margen por abajo en pantallas grandes -->
+
                 <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
                     <h5 class="text-white">Enlaces</h5>
                     <ul class="list-unstyled mb-0 text-secondary">
                         <li>
-                            <!-- quitamos los estilos por defecto de los enlaces y aplicamos un color
-                            de texto predefinido-->
                             <a href="#inicio" class="text-decoration-none text-secondary">Inicio</a>
                         </li>
                         <li>
@@ -595,8 +592,6 @@
                         </li>
                     </ul>
                 </div>
-                <!-- para que la columna ocupe el 100% en pantallas pequeñas, el 50% en medianas, el 25% en pantallas grandes,
-                margen abajo y eliminamos el margen por abajo en pantallas grandes -->
                 <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
                     <a href="https://github.com/E7OY" target="_blank">
                         <img src="../img/imgeloy.webp" class="img-fluid" width="180" alt="">
@@ -605,7 +600,7 @@
             </div>
         </div>
 
-        <!-- texto centrado al centro, padding y margen a todos lados y texto de color blanco -->
+
         <div class="text-center p-3 m-3 text-white">
             © 2025 Copyright:
             <a class="text-secondary" href="https://e7oy.github.io/">e7oy.github.io</a>
