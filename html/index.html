@@ -66,7 +66,7 @@
         <section class="inicio">
             <!-- aplicamos estilos de container de bootstrap, un ancho del 75%, un margen en eje horizontal de auto
             y un padding vertical -->
-            <div id="inicio" class="container w-75 mx-auto py-5">
+            <div id="inicio" class="container w-100 mx-auto py-5">
                 <!-- aplicamos estilos de fila de bootstrap, hacemos flexible el contenedor, y verticalmente 
                 alineamos al centro, horizontalmente separamos el contenido aplicando espacios alrededor de los elementos  -->
                 <div class="row d-flex justify-content-around align-items-center">
@@ -108,63 +108,63 @@
         </section>
 
 
-        <section class="habilidades">
+        <section class="habilidades" id="habilidades">
             <!-- aplicamos estilos de container de bootstrap, texto centrado, bordes redondeados, fondo secundario, 
             margen vertical y padding vertical -->
-            <div id="habilidades" class="container text-center rounded-4 bg-body-secondary my-5 py-5">
-                <button class="btn rounded-5 btn-secondary">Habilidades</button>
-                <!-- aplicamos estilos de fila de bootstrap, hacemos flexible el contenedor, alineamos verticalmente 
-                al centro y horizontalmente distribuimos el contenido de manera uniforme, aplicamos padding -->
-                <div class="row d-flex justify-content-evenly align-items-center p-4">
-                    <div class="col-12 text-center">
-                        <h4 class="fw-light">Habilidades y tecnologías que domino</h4>
-                    </div>
+            <div class=" container w-75  py-5 gap-2 d-flex flex-column justify-content-start">
+                
+                <div class="col-12 d-flex flex-row align-items-center justify-content-start mb-1 gap-2">
+                    <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                        <i class="fab fa-html5 icon-html fa-1x float-start"></i>
+                        <h6 class="m-0 p-0 fw-light float-end text-white">HTML</h6>
+                    </span>
+                    <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                        <i class="fab fa-css3 icon-css fa-1x float-start"></i>
+                        <h6 class="m-0 p-0 fw-light float-end text-white">CSS</h6>
+                    </span>
+                    <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                    <i class="fab fa-js icon-js fa-1x float-start"></i>
+                    <h6 class="m-0 p-0 fw-light float-end text-white">JavaScript</h6>
+                </span>
+                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                    <img src="../img/Typescript_logo_2020.svg.png" width="15" alt="">
+                    <h6 class="m-0 p-0 fw-light float-end text-white">TypeScript</h6>
+                </span>
+                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                    <i class="fab fa-react icon-react fa-1x float-start"></i>
+                    <h6 class="m-0 p-0 fw-light float-end text-white">React</h6>
+                </span>
+                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                    <i class="fab fa-java icon-java fa-1x float-start"></i>
+                    <h6 class="m-0 p-0 fw-light float-end text-white">Java</h6>
+                </span>
+                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                    <i class="fab fa-php icon-php fa-1x float-start"></i>
+                    <h6 class="m-0 p-0 fw-light float-end text-white">PHP</h6>
+                </span>
                 </div>
-                <!-- aplicamos estilos de fila de bootstrap, hacemos flexible el contenedor, alineamos verticalmente 
-                al centro y horizontalmente distribuimos el contenido de manera uniforme, aplicamos padding -->
-                <div class="row d-flex justify-content-evenly text-center align-items-center p-5">
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <i class="fab fa-js icon-js fa-4x mb-2"></i>
-                        <h5 class="text-muted">JavaScript</h5>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <i class="fab fa-react icon-react fa-4x mb-2"></i>
-                        <h5 class="text-muted">React</h5>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <i class="fab fa-java icon-java fa-4x mb-2"></i>
-                        <h5 class="text-muted">Java</h5>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <img src="../img/spring-logo.webp" class="img-fluid w-50 mb-2" alt="logo spring">
-                        <h5 class="text-muted">Spring</h5>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <i class="fab fa-php icon-php fa-4x mb-2"></i>
-                        <h5 class="text-muted">PHP</h5>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-evenly text-center align-items-center p-5">
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <i class="fab fa-git icon-git fa-4x mb-2"></i>
-                        <h5 class="text-muted">GIT</h5>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <i class="fab fa-figma icon-figma fa-4x mb-2"></i>
-                        <h5 class="text-muted">Figma</h5>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <img src="../img/Tailwind_CSS_Logo.svg.webp" class="img-fluid w-50 mb-2" alt="logo tailwind">
-                        <h5 class="text-muted">Tailwind</h5>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <i class="fab fa-sass icon-sass fa-4x mb-2"></i>
-                        <h5 class="text-muted">Sass</h5>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2 mb-4">
-                        <i class="fab fa-symfony icon-symfony fa-4x mb-2"></i>
-                        <h5 class="text-muted">Symfony</h5>
-                    </div>
+
+                <div class="col-12 d-flex flex-row align-items-center justify-content-start gap-2">
+                    <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                        <img src="../img/Tailwind_CSS_Logo.svg.webp" width="15" alt="">
+                    <h6 class="m-0 p-0 fw-light float-end text-white">Tailwind</h6>
+                </span>
+                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                    <i class="fab fa-sass icon-sass fa-1x float-start"></i>
+                    <h6 class="m-0 p-0 fw-light float-end text-white">SASS</h6>
+                </span>
+                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                    <i class="fab fa-symfony icon-symfony fa-1x float-start"></i>
+                    <h6 class="m-0 p-0 fw-light float-end text-white">Symfony</h6>
+                </span>
+                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                    <i class="fab fa-figma icon-figma fa-1x float-start"></i>
+                    <h6 class="m-0 p-0 fw-light float-end text-white">Figma</h6>
+                </span>
+                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                    <i class="fab fa-git icon-git fa-1x float-start"></i>
+                    <h6 class="m-0 p-0 fw-light float-end text-white">GIT</h6>
+                </span>
                 </div>
             </div>
         </section>
@@ -172,113 +172,98 @@
         <section class="proyectos">
             <!-- aplicamos estilos de container de bootstrap, texto centrado, bordes redondeados, 
             margen vertical y padding vertical -->
-            <div id="proyectos" class="container text-center rounded-4 my-5 py-5">
-                <button class="btn rounded-5 btn-secondary">Proyectos</button>
-                <div class="row mt-5 d-flex align-items-stretch">
-                    <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                            <div class="card text-start">
-                                <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
-                                    <a href="memorama.html" class="text-decoration-none w-100">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="../img/memorama.webp" class="d-block w-100" alt="memorama desktop">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="../img/memoramamobiles.webp" class="d-block w-100"
-                                                    alt="memorama mobile">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="../img/mamoramawatch.webp" class="d-block w-100"
-                                                    alt="memorama watch">
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <h4 class="card-title fw-semibold mt-4 mx-3">Memorama</h4>
-                                <p class="card-text mb-4 mx-3 text-secondary">Proyecto sobre un juego de memoria realizado
-                                    con JavaScript.</p>
+            <div id="proyectos" class="container w-75 text-center rounded-4 my-5 py-5">
+                <div class="gap-3 d-flex flex-row justify-content-start align-items-center">
+                    <img src="../img/proyects_icon.png" width="30" alt="icono proyectos">
+                    <h2 class="text-start text-white float-start fw-bold m-0 p-0">Proyectos</h2>
+                    <hr class="text-white bg-white h-5 w-100">
+                </div>
+                <div class="row w-50 mt-5 d-flex align-items-center justify-content-center flex-row w-auto gap-4">
+
+                    <div class="col-12 w-75 text-start d-flex justify-content-center flex-row align-items-center gap-5">
+                        <img src="../img/sneakvault_desktop.png" width="400" class="img-fluid border border-1 border-white-50 rounded-2"
+                        alt="sneakvault desktop">
+
+                        <div class="d-flex flex-column justify-content-start gap-3">
+                            <h2 class="text-white fw-bold m-0 p-0 text-start">SneakVault E-Commerce</h2>
+                            
+                            <div class="w-auto gap-2 d-flex flex-row align-items-center justify-content-start">
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <i class="fab fa-react icon-react fa-1x float-start"></i>
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">React</h6>
+                                </span>
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <img src="../img/Typescript_logo_2020.svg.png" width="15" alt="">
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">TypeScript</h6>
+                                </span>
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <i class="fab fa-html5 icon-html fa-1x float-start"></i>
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">HTML</h6>
+                                </span>
                             </div>
+
+                            <p class="text-white-50 fw-light">Este proyecto es una ecommerce de ropa construida con React y Typescript </p>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                            <div class="card text-start">
-                                <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
-                                    <a href="podcast.html" class="text-decoration-none w-100">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="../img/podcastproject.webp" class="d-block w-100"
-                                                    alt="podcast desktop">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="../img/podcastmobile.webp" class="d-block w-100"
-                                                    alt="podcast mobile">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="../img/podcastwatch.webp" class="d-block w-100"
-                                                    alt="podcast watch">
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <h4 class="card-title fw-semibold mt-4 mx-3">Podcast</h4>
-                                <p class="card-text mb-4 mx-3 text-secondary">Landing Page sobre un Podcast para diseño de
-                                    interfaces web.</p>
+                    </div>
+
+                    <div class="col-12 w-75 text-start d-flex justify-content-center flex-row align-items-center gap-5">
+
+                        <img src="../img/memorama_desktop.png" width="400" class="img-fluid border border-1 border-white-50 rounded-2"
+                        alt="sneakvault desktop">
+
+                        <div class="d-flex flex-column justify-content-start gap-3">
+                            <h2 class="text-white fw-bold m-0 p-0 text-start">Memorama</h2>
+                            
+                            <div class="w-auto gap-2 d-flex flex-row align-items-center justify-content-start">
+                                <span style="background-color: #ffffff0d;"  class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <i class="fab fa-js icon-js fa-1x float-start"></i>
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">JavaScript</h6>
+                                </span>
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <i class="fab fa-html5 icon-html fa-1x float-start"></i>
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">HTML</h6>
+                                </span>
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <i class="fab fa-css3 icon-css fa-1x float-start"></i>
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">CSS</h6>
+                                </span>
                             </div>
+
+                            <p class="text-white-50 fw-light">Este proyecto es una ecommerce de ropa construida con React y Typescript </p>
+
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
-                            <div class="card text-start">
-                                <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
-                                    <a href="portfolio.html" class="text-decoration-none w-100">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="../img/portfolio.webp" class="d-block w-100"
-                                                    alt="portfolio desktop">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="../img/portfoliomobile.webp" class="d-block w-100"
-                                                    alt="portfolio mobile">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="../img/portfoliowatch.webp" class="d-block w-100"
-                                                    alt="portfolio watch">
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <button class="carousel-control-prev" type="button"
-                                        data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button"
-                                        data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                <h4 class="card-title fw-semibold mt-4 mx-3">Portfolio</h4>
-                                <p class="card-text mb-4 mx-3 text-secondary">Proyecto sobre un portfolio personal hecho con
-                                    HTML, CSS y JS.</p>
+                    </div>
+
+                    <div class="col-12 w-75 text-start d-flex justify-content-center flex-row align-items-center gap-5">
+
+                        <img src="../img/sneakvault_desktop.png" width="400" class="img-fluid border border-1 border-white-50 rounded-2"
+                        alt="sneakvault desktop">
+
+                        <div class="d-flex flex-column justify-content-start gap-3">
+                            <h2 class="text-white fw-bold m-0 p-0 text-start">Portfolio</h2>
+                            
+                            <div class="w-auto gap-2 d-flex flex-row align-items-center justify-content-start">
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <i class="fab fa-html5 icon-html fa-1x float-start"></i>
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">HTML</h6>
+                                </span>
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <i class="fab fa-css3 icon-css fa-1x float-start"></i>
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">CSS</h6>
+                                </span>
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <i class="fab fa-js icon-js fa-1x float-start"></i>
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">JS</h6>
+                                </span>
                             </div>
+
+                            <p class="text-white-50 fw-light">Este proyecto es una ecommerce de ropa construida con React y Typescript </p>
                         </div>
+                    </div>
+
+
+
+                 
     
                         <a href="https://github.com/E7OY?tab=repositories" class="text-decoration-none" target="_blank">Ver
                             más proyectos en GitHub > </a>

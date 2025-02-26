@@ -4,6 +4,10 @@
     font-family: Roboto;
 }
 
+body {
+    background-color: #050E18;
+}
+
 .icon-html {
     color: #e34c26;
 }
