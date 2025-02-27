@@ -14,23 +14,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <style>
-    .bg-custom {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -2;
-        height: 420vh;
-        width: 100vw;
-        background-color: #0e0e0e;
-        background-image: radial-gradient(ellipse 60% 60% at 50% -30%, rgba(120, 119, 198, 0.3), rgba(0, 0, 0, 0));
-    }
+        .bg-custom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            height: 420vh;
+            width: 100vw;
+            background-color: #0e0e0e;
+            background-image: radial-gradient(ellipse 60% 60% at 50% -30%, rgba(120, 119, 198, 0.3), rgba(0, 0, 0, 0));
+        }
+        .header-bg {
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+        .header-bg.scrolled {
+            background-color: rgba(30, 30, 30, 0.8);
+        }
+
 </style>
 </head>
 
-<body class="m-0 mx-auto">
+<body class="m-0 p-0 mx-auto">
     <div class="bg-custom"></div>
-
-    <header>
+    <header class="header-bg position-sticky top-0 w-100">
         <nav class="navbar navbar-expand-lg w-50 p-4 text-center mx-auto mt-2">
             <div class="container-fluid">
                 <button class="navbar-toggler mb-4 mx-auto" type="button" data-bs-toggle="collapse"
@@ -38,35 +45,35 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                    <ul class="navbar-nav d-flex gap-1 text-white">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="#inicio">Sobre mi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#habilidades">Habilidades</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#proyectos">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#experiencia">Experiencia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#formacion">Formacion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#contacto">Contacto</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a href="../img/cv.pdf" class="btn btn-secondary"
-                                download="Eloy_Garcia_Martinez_CV.pdf">Descargar CV</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav d-flex gap-1 text-white">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#inicio">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#formacion">Formacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../img/cv.pdf" class="btn btn-secondary"
+                            download="Eloy_Garcia_Martinez_CV.pdf">Descargar CV</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
 
     <main>
 
