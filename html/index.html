@@ -11,27 +11,27 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="shortcut icon" href="../img/imgeloy.webp" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<style>
-    .bg-custom {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -2;
-        height: 420vh;
-        width: 100vw;
-        background-color: #0e0e0e;
-        background-image: radial-gradient(ellipse 60% 60% at 50% -30%, rgba(120, 119, 198, 0.3), rgba(0, 0, 0, 0));
-    }
-</style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .bg-custom {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            height: 420vh;
+            width: 100vw;
+            background-color: #0e0e0e;
+            background-image: radial-gradient(ellipse 60% 60% at 50% -30%, rgba(120, 119, 198, 0.3), rgba(0, 0, 0, 0));
+        }
+    </style>
 </head>
 
 <body class="m-0 mx-auto">
     <div class="bg-custom"></div>
 
-    <header>
-        <nav class="navbar navbar-expand-lg w-50 p-4 text-center mx-auto mt-2">
+    <header class="position-fixed w-100 mx-auto m-0 " style="background-color: #1c1b25a8;">
+        <nav class="navbar navbar-expand-lg  p-4 text-center mx-auto m-0" id="navbar">
             <div class="container-fluid">
                 <button class="navbar-toggler mb-4 mx-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -39,27 +39,27 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                    <ul class="navbar-nav d-flex gap-1 text-white">
+                    <ul class="navbar-nav d-flex gap-1 text-white nav-pills">
                         <li class="nav-item">
                             <a class="nav-link active text-white" aria-current="page" href="#inicio">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#habilidades">Habilidades</a>
+                            <a class="nav-link text-white" href="#scrollspyHeading1">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#proyectos">Proyectos</a>
+                            <a class="nav-link text-white" href="#scrollspyHeading2">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#experiencia">Experiencia</a>
+                            <a class="nav-link text-white" href="#scrollspyHeading3">Experiencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#formacion">Formacion</a>
+                            <a class="nav-link text-white" href="#scrollspyHeading4">Formacion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#contacto">Contacto</a>
+                            <a class="nav-link text-white" href="#scrollspyHeading5">Contacto</a>
                         </li>
                         <li class="nav-item ">
-                            <a href="../img/cv.pdf" class="btn btn-secondary"
+                            <a href="../img/cv.pdf" class="btn btn-secondary p-2"
                                 download="Eloy_Garcia_Martinez_CV.pdf">Descargar CV</a>
                         </li>
                     </ul>
@@ -68,10 +68,10 @@
         </nav>
     </header>
 
-    <main>
+    <main data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
         <section class="inicio">
-            <div id="inicio" class="container w-100 mx-auto py-5">
+            <div id="inicio" class="container w-100 mx-auto py-5 mt-5">
                 <div class="row d-flex justify-content-around align-items-center">
                     <div class="col-12 col-md-6">
                         <h1 class="fw-bolder text-white">Eloy García Martínez</h1>
@@ -103,7 +103,7 @@
         </section>
 
 
-        <section class="habilidades" id="habilidades">
+        <section class="habilidades"  id="scrollspyHeading1" >
             <div class=" container w-75  py-5 gap-2 d-flex flex-column justify-content-start">
                 
                 <div class="col-12 d-flex flex-row align-items-center justify-content-start mb-1 gap-2">
@@ -163,7 +163,7 @@
         </section>
 
 
-        <section class="proyectos">
+        <section class="proyectos"  id="scrollspyHeading2" >
             <div id="proyectos" class="container w-auto text-center rounded-4 my-5 py-5">
                 <div class="gap-3 d-flex flex-row justify-content-start align-items-center">
                     <img src="../img/proyects_icon.png" width="30" alt="icono proyectos">
@@ -204,8 +204,40 @@
                         </div>
                     </div>
 
+                    
                     <div class="col-12 w-75 text-start d-flex justify-content-center flex-row align-items-center gap-5">
+                        <img src="../img/sneakvault_desktop.png" width="400" class="img-fluid proyect-img border border-1 border-white-50 rounded-2"
+                        alt="sneakvault desktop">
 
+                        <div class="d-flex flex-column justify-content-start gap-3">
+                            <h2 class="text-white fw-bold m-0 p-0 text-start">
+                            <a href="https://github.com/E7OY?tab=repositories" class="text-decoration-none text-white">SneakVault E-Commerce</a></h2>
+
+                            
+                            <div class="w-auto gap-2 d-flex flex-row align-items-center justify-content-start">
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <i class="fab fa-react icon-react fa-1x float-start"></i>
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">React</h6>
+                                </span>
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <img src="../img/Typescript_logo_2020.svg.png" width="15" alt="">
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">TypeScript</h6>
+                                </span>
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <i class="fab fa-html5 icon-html fa-1x float-start"></i>
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">HTML</h6>
+                                </span>
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <img src="../img/firebase.png" width="15" alt="">
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">Firebase</h6>
+                                </span>
+                            </div>
+
+                            <p class="text-white-50 fw-light">Este proyecto es una ecommerce de ropa construida con React y Typescript </p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 w-75 text-start d-flex justify-content-center flex-row align-items-center gap-5">
                         <img src="../img/memorama_desktop.png" width="400" class="img-fluid proyect-img border border-1 border-white-50 rounded-2"
                         alt="sneakvault desktop">
 
@@ -270,7 +302,7 @@
             </section>
 
 
-        <section class="proyectos">
+        <section class="proyectos"  id="scrollspyHeading3" >
             <div id="proyectos" class="container w-75 text-center rounded-4 my-5 py-5">
                 <div class="gap-3 d-flex flex-row justify-content-start align-items-center">
                     <img src="../img/proyects_icon.png" width="30" alt="icono proyectos">
@@ -308,7 +340,7 @@
             </div>
         </section>
 
-        <section class="formacion">
+        <section class="formacion"  id="scrollspyHeading4" >
             <div id="formacion" class="container w-75 text-center rounded-4 my-5 py-5">
                 <div class="gap-3 d-flex flex-row justify-content-start align-items-center">
                     <img src="../img/proyects_icon.png" width="30" alt="icono proyectos">
@@ -519,8 +551,9 @@
                     </div>
                 </div>
             </div>
+            
 
-            <section class="contacto">
+            <section class="contacto"  id="scrollspyHeading5" >
                 <div id="proyectos" class="container w-75 text-center rounded-4 my-5 py-5">
                     <div class="gap-3 d-flex flex-row justify-content-start align-items-center">
                         <img src="../img/proyects_icon.png" width="30" alt="icono proyectos">
