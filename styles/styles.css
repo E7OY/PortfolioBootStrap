@@ -4,6 +4,10 @@
     font-family: Roboto;
 }
 
+body {
+    background: #0e0e0e;
+}
+
 
 .icon-html {
     color: #e34c26;
@@ -49,16 +53,22 @@
     color: #cc6699;
 }
 
- 
+.icon-bootstrap {
+    color: #7952b3;
+}
+
+
 
 body {
     margin: 0 auto;
 }
 
-#proyectos .card:hover, #formacion .card:hover {
+#proyectos .card:hover,
+#formacion .card:hover {
     box-shadow: 0px 0px 10px rgb(121, 121, 121);
     transform: scale(1.02);
 }
+
 #formacion .card:hover {
     cursor: pointer;
 }
@@ -78,6 +88,7 @@ body {
     font-weight: bold;
     color: white;
 }
+
 #github-activity {
     display: flex;
     flex-direction: column;
@@ -90,16 +101,19 @@ body {
     right: 10px;
     color: white;
     border: 2px solid #343A40;
-    cursor: pointer; 
+    cursor: pointer;
 }
-#github-activity:hover{
+
+#github-activity:hover {
     background: #343A40;
 }
+
 .calendar {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .day {
     width: 30px;
     height: 30px;
@@ -111,17 +125,25 @@ body {
 .day.level-1 {
     background-color: #0c3b24;
 }
+
 .day.level-2 {
     background-color: #0f472c;
 }
+
 .day.level-3 {
     background-color: #006D32;
 }
+
 .day.level-4 {
     background-color: #39D353;
 }
 
 .proyect-img:hover {
     transform: scale(1.1) rotate(-2deg);
-     transition: 1s;
- }
+    transition: 1s;
+}
+
+.proyect-img {
+    transition: 1s;
+
+}
