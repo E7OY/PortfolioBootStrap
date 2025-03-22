@@ -21,15 +21,16 @@
             z-index: -2;
             height: 450vh;
             width: 100vw;
-            background-color: #0e0e0e;
-            background-image: radial-gradient(ellipse 60% 60% at 50% -30%, rgba(74, 103, 184, 0.493), rgba(0, 0, 0, 0));
+            background-color: #18181B;
+            background-image: radial-gradient(ellipse 60% 60% at 50% -40%, rgba(27, 27, 27, 0.493), rgba(0, 0, 0, 0));
         }
         .header-bg {
             background-color: transparent;
             transition: background-color 0.3s ease;
         }
         .header-bg.scrolled {
-            background-color: #0e0e0e;
+            background-color: #19191B;
+            z-index: 1000;
         }
 </style>
 </head>
@@ -180,16 +181,57 @@
                 </div>
                 <div class="row w-50 mt-5 d-flex align-items-center justify-content-center flex-row w-auto gap-4">
 
+
+
                     <div class="col-12 w-75 text-start d-flex justify-content-center flex-row align-items-center gap-5">
-                        <a href="https://github.com/E7OY?tab=repositories" class="text-decoration-none text-white" target="_blank">
-                            <img src="../img/sneakvault_desktop.png" width="400" class="img-fluid proyect-img border border-1 border-white-50 rounded-2"
-                            alt="sneakvault desktop">
-                        </a>
+                        <div class="w-auto col-4">
+
+                            <a href="https://github.com/E7OY?tab=repositories" class="text-decoration-none text-white" target="_blank">
+                                <img src="../img/Think..png" width="400" class="img-fluid proyect-img border border-1 border-white-50 rounded-2"
+                                alt="Think desktop">
+                            </a>
+                        </div>
 
                         <div class="d-flex flex-column justify-content-start gap-3">
                             <h2 class="text-white fw-bold m-0 p-0 text-start">
-                            <a href="../html/sneakvault.html" class="text-decoration-none text-white">SneakVault E-Commerce</a></h2>
+                            <a href="../html/sneakvault.html" class="text-decoration-none text-white">Think. (Proximamente)</a></h2>
 
+                            
+                            <div class="w-auto gap-2 d-flex flex-row align-items-center justify-content-start">
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <i class="fab fa-react icon-react fa-1x float-start"></i>
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">React</h6>
+                                </span>
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <img src="../img/Typescript_logo_2020.svg.png" width="15" alt="">
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">TypeScript</h6>
+                                </span>
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                    <i class="fab fa-java icon-java fa-1x float-start"></i>
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">JAVA</h6>
+                                </span>
+                            </div>
+                            <div class="w-auto">
+                                <p class="text-white-50 fw-light">Este proyecto es una app de educación
+                                    construida con React y Typescript para el frontend y Java con Spring Boot para el backend.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 w-75 text-start d-flex justify-content-center flex-row align-items-center gap-5">
+                        <div class="w-auto col-4">
+                            <a href="https://github.com/E7OY/sneakvault" class="text-decoration-none text-white" target="_blank">
+                                <img src="../img/sneakvault_desktop.png" width="400" class="img-fluid proyect-img border border-1 border-white-50 rounded-2"
+                                alt="SneakVault desktop">
+                            </a>
+                        </div>
+                    
+                        <div class="d-flex flex-column justify-content-start gap-3">
+                            <h2 class="text-white fw-bold m-0 p-0 text-start">
+                                <a href="../html/sneakvault.html" class="text-decoration-none text-white">SneakVault E-Commerce</a>
+                            </h2>
                             
                             <div class="w-auto gap-2 d-flex flex-row align-items-center justify-content-start">
                                 <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
@@ -209,23 +251,27 @@
                                     <h6 class="m-0 p-0 fw-light float-end text-white-50">Firebase</h6>
                                 </span>
                             </div>
-
-                            <p class="text-white-50 fw-light">Este proyecto es una ecommerce de ropa construida con React y Typescript </p>
+                            <div class="w-auto">
+                                <p class="text-white-50 fw-light">Este proyecto es un e-commerce de zapatillas construido con React y TypeScript.</p>
+                            </div>
                         </div>
                     </div>
-
-                
+                    
                     <div class="col-12 w-75 text-start d-flex justify-content-center flex-row align-items-center gap-5">
-                    <a href="https://memoramajs.vercel.app/" target="_blank">
-                        <img src="../img/memorama_desktop.png" width="400" class="img-fluid proyect-img border border-1 border-white-50 rounded-2" alt="sneakvault desktop">
-                    </a>  
+                        <div class="w-auto col-4">
+                            <a href="https://memoramajs.vercel.app/" class="text-decoration-none text-white" target="_blank">
+                                <img src="../img/memorama_desktop.png" width="400" class="img-fluid proyect-img border border-1 border-white-50 rounded-2"
+                                alt="Memorama desktop">
+                            </a>
+                        </div>
+                    
                         <div class="d-flex flex-column justify-content-start gap-3">
                             <h2 class="text-white fw-bold m-0 p-0 text-start">
-                            <a href="../html/memorama.html" class="text-decoration-none text-white">Memorama</a>
+                                <a href="../html/memorama.html" class="text-decoration-none text-white">Memorama</a>
                             </h2>
                             
                             <div class="w-auto gap-2 d-flex flex-row align-items-center justify-content-start">
-                                <span style="background-color: #ffffff0d;"  class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
+                                <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
                                     <i class="fab fa-js icon-js fa-1x float-start"></i>
                                     <h6 class="m-0 p-0 fw-light float-end text-white-50">JavaScript</h6>
                                 </span>
@@ -238,17 +284,22 @@
                                     <h6 class="m-0 p-0 fw-light float-end text-white-50">CSS</h6>
                                 </span>
                             </div>
-
-                            <p class="text-white-50 fw-light">Este proyecto es una ecommerce de ropa construida con React y Typescript </p>
-
+                            <div class="w-auto">
+                                <p class="text-white-50 fw-light">Juego de memoria hecho en el CFGS DAW y construido con JavaScript vanilla, HTML y CSS.
+                                </p>
+                            </div>
                         </div>
                     </div>
-
+                    
+                    <!-- Fourth container (Portfolio) -->
                     <div class="col-12 w-75 text-start d-flex justify-content-center flex-row align-items-center gap-5">
-                        <a href="https://e7oy.github.io/" target="_blank">
-                            <img src="../img/portfolio.desktop.png" width="400" class="img-fluid proyect-img border border-1 border-white-50 rounded-2"
-                            alt="sneakvault desktop">
-                        </a>
+                        <div class="w-auto col-4">
+                            <a href="https://e7oy.github.io/" class="text-decoration-none text-white" target="_blank">
+                                <img src="../img/portfolio.desktop.png" width="400" class="img-fluid proyect-img border border-1 border-white-50 rounded-2"
+                                alt="Portfolio desktop">
+                            </a>
+                        </div>
+                    
                         <div class="d-flex flex-column justify-content-start gap-3">
                             <h2 class="text-white fw-bold m-0 p-0 text-start">
                                 <a href="../html/portfolio.html" class="text-decoration-none text-white">Portfolio</a>
@@ -265,19 +316,17 @@
                                 </span>
                                 <span style="background-color: #ffffff0d;" class="d-flex align-items-center justify-content-around gap-1 fw-lighter px-3 py-2 border border-1 border-black-50 rounded-5 bg-opacity-100 text-black-50">
                                     <i class="fab fa-js icon-js fa-1x float-start"></i>
-                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">JS</h6>
+                                    <h6 class="m-0 p-0 fw-light float-end text-white-50">JavaScript</h6>
                                 </span>
                             </div>
-
-                            <p class="text-white-50 fw-light">Este proyecto es una ecommerce de ropa construida con React y Typescript </p>
+                            <div class="w-auto">
+                                <p class="text-white-50 fw-light">Portfolio personal desplegado en githu pages y construido con HTML, CSS y JavaScript .</p>
+                            </div>
                         </div>
                     </div>
-
-                        <a href="https://github.com/E7OY?tab=repositories" class="text-decoration-none" target="_blank">Ver
-                            más proyectos en GitHub > </a>
-                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
 
         <section class="proyectos"  id="scrollspyHeading3" >

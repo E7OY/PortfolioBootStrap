@@ -5,8 +5,11 @@
 }
 
 body {
-    background: #0e0e0e;
+    background: #18181B;
+    margin: 0 auto;
+    overflow-x: hidden;
 }
+
 
 
 .icon-html {
@@ -57,11 +60,6 @@ body {
     color: #7952b3;
 }
 
-
-
-body {
-    margin: 0 auto;
-}
 
 #proyectos .card:hover,
 #formacion .card:hover {
